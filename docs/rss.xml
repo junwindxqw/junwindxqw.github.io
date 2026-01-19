@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜鱼的技术日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜鱼的技术日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Mon, 19 Jan 2026 01:52:32 +0000</lastBuildDate><managingEditor>阿炜鱼的技术日志</managingEditor><ttl>60</ttl><webMaster>阿炜鱼的技术日志</webMaster><item><title>后台首页统计报表的查询优化</title><link>https://junwindxqw.github.io/post/hou-tai-shou-ye-tong-ji-bao-biao-de-cha-xun-you-hua.html</link><description>很多的后台管理系统，首页就展示数据报表，如下图：
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜鱼的技术日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜鱼的技术日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Mon, 19 Jan 2026 02:04:05 +0000</lastBuildDate><managingEditor>阿炜鱼的技术日志</managingEditor><ttl>60</ttl><webMaster>阿炜鱼的技术日志</webMaster><item><title>后台首页统计报表的查询优化</title><link>https://junwindxqw.github.io/post/hou-tai-shou-ye-tong-ji-bao-biao-de-cha-xun-you-hua.html</link><description>很多的后台管理系统，首页就展示数据报表，如下图：
 
 &lt;img width='551' height='333' alt='Image' src='https://github.com/user-attachments/assets/7592237c-18b6-46ca-b966-d91de1d37836' /&gt;
 
 这种首页实时查询各种数据很不推荐，缺点：
 1. 每次登录到管理后台，都得加载一次这个统计页面，实际并不是每次都想看，产生大量无意义的查询开销。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/hou-tai-shou-ye-tong-ji-bao-biao-de-cha-xun-you-hua.html</guid><pubDate>Mon, 19 Jan 2026 01:45:32 +0000</pubDate></item><item><title>我的issues博客</title><link>https://junwindxqw.github.io/post/wo-de-issues-bo-ke.html</link><description>基于Gmeek仓库的方案实现
-1. 创建 yourname.github.io仓库
-2. fork Gmeek
+1. 创建 github账户同名.github.io 仓库
+2. fork Gmeek 仓库
 3. settings -&gt; build and deployment -&gt; source -&gt; GitHub Actions
 4. 在issues写作，记得加标签。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/wo-de-issues-bo-ke.html</guid><pubDate>Sun, 18 Jan 2026 01:31:25 +0000</pubDate></item></channel></rss>
