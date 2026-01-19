@@ -1,4 +1,6 @@
-基于Gmeek仓库的方案实现
+基于Gmeek
+
+搭建步骤：
 1. 创建 github账户同名.github.io 仓库
 2. fork Gmeek 仓库
 3. settings -> build and deployment -> source -> GitHub Actions
