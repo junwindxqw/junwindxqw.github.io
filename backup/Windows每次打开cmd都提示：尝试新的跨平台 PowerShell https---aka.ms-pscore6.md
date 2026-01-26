@@ -34,5 +34,5 @@ PowerShell 7.5.4
 
 <img width="443" height="130" alt="Image" src="https://github.com/user-attachments/assets/5c501e7a-27d3-486e-bd53-5c96173cd8c6" />
 
-
+参考资料：https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5#winget
 
