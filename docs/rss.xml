@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜鱼的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜鱼的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Tue, 03 Feb 2026 02:27:59 +0000</lastBuildDate><managingEditor>阿炜鱼的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜鱼的编程日志</webMaster><item><title>云效生成SSH密钥对</title><link>https://junwindxqw.github.io/post/yun-xiao-sheng-cheng-SSH-mi-yao-dui.html</link><description>我的代码仓库放在阿里云效Codeup中，现在我在虚拟机中安装了Ubuntu 桌面版，我需要使用git拉取仓库到我新安装的Ubuntu系统中。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/yun-xiao-sheng-cheng-SSH-mi-yao-dui.html</guid><pubDate>Tue, 27 Jan 2026 10:20:28 +0000</pubDate></item><item><title>windows安装PowerShell</title><link>https://junwindxqw.github.io/post/windows-an-zhuang-PowerShell.html</link><description>phpstorm中每次打开terminal，都会有这个提示
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜鱼的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜鱼的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Tue, 03 Feb 2026 08:51:09 +0000</lastBuildDate><managingEditor>阿炜鱼的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜鱼的编程日志</webMaster><item><title>php中false值用empty的结果是true</title><link>https://junwindxqw.github.io/post/php-zhong-false-zhi-yong-empty-de-jie-guo-shi-true.html</link><description>```php
+error_reporting(E_ALL);
+
+$a = false;
+if (empty($a)) {
+    var_dump(111);  // 执行到这个分支
+} else {
+    var_dump(222);
+}
+
+var_dump(empty($a));  // bool(true)
+```。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/php-zhong-false-zhi-yong-empty-de-jie-guo-shi-true.html</guid><pubDate>Tue, 03 Feb 2026 08:50:41 +0000</pubDate></item><item><title>云效生成SSH密钥对</title><link>https://junwindxqw.github.io/post/yun-xiao-sheng-cheng-SSH-mi-yao-dui.html</link><description>我的代码仓库放在阿里云效Codeup中，现在我在虚拟机中安装了Ubuntu 桌面版，我需要使用git拉取仓库到我新安装的Ubuntu系统中。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/yun-xiao-sheng-cheng-SSH-mi-yao-dui.html</guid><pubDate>Tue, 27 Jan 2026 10:20:28 +0000</pubDate></item><item><title>windows安装PowerShell</title><link>https://junwindxqw.github.io/post/windows-an-zhuang-PowerShell.html</link><description>phpstorm中每次打开terminal，都会有这个提示
 
 &lt;img width='567' height='109' alt='Image' src='https://github.com/user-attachments/assets/d8e0ba66-9cce-4eb5-8bab-36332c87ec5a' /&gt;
 
