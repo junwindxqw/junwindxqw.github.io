@@ -10,13 +10,23 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="最近网站被攻击，为了加强安全，使用宝塔将public目录下uploads目录递归修改权限为700。">
-<meta property="og:title" content="宝塔批量修改大量文件的权限会崩">
-<meta property="og:description" content="最近网站被攻击，为了加强安全，使用宝塔将public目录下uploads目录递归修改权限为700。">
+<meta name="description" content="参考：https://www.doubao.com/thread/w67c71b053846a67c
+
+1. 安装wsl2
+2. wsl2安装Ubuntu24.04
+3. 安装Docker Desktop ： https://www.docker.com/products/docker-desktop/  ，必须勾选： Use WSL 2 instead of Hyper-V
+     安装后，需要重启电脑，无需登录。">
+<meta property="og:title" content="windows中安装docker">
+<meta property="og:description" content="参考：https://www.doubao.com/thread/w67c71b053846a67c
+
+1. 安装wsl2
+2. wsl2安装Ubuntu24.04
+3. 安装Docker Desktop ： https://www.docker.com/products/docker-desktop/  ，必须勾选： Use WSL 2 instead of Hyper-V
+     安装后，需要重启电脑，无需登录。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://junwindxqw.github.io/post/bao-ta-pi-liang-xiu-gai-da-liang-wen-jian-de-quan-xian-hui-beng.html">
+<meta property="og:url" content="https://junwindxqw.github.io/post/windows-zhong-an-zhuang-docker.html">
 <meta property="og:image" content="https://github.com/junwindxqw.png">
-<title>宝塔批量修改大量文件的权限会崩</title>
+<title>windows中安装docker</title>
 
 
 
@@ -49,7 +59,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">宝塔批量修改大量文件的权限会崩</h1>
+<h1 class="postTitle">windows中安装docker</h1>
 <div class="title-right">
     <a href="https://junwindxqw.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -57,7 +67,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/junwindxqw/junwindxqw.github.io/issues/4" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/junwindxqw/junwindxqw.github.io/issues/9" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -73,13 +83,20 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>最近网站被攻击，为了加强安全，使用宝塔将public目录下uploads目录递归修改权限为700。<br>
-结果宝塔死了。</p>
-<p>为什么面板会“崩”？<br>
-PHP 执行超时（Timeout）： 宝塔面板的后端主要是靠 PHP 和 Python 脚本运行的。当你点击“应用到子目录”时，系统会遍历每一个文件。如果文件数量达到几万甚至几十万个，处理时间会超过面板预设的脚本执行限制，导致前端页面失去响应或报错。</p>
-<p>I/O 负载过高： 修改权限是一个密集的磁盘读写操作。大量小文件的高频修改会导致磁盘 I/O 瞬间飙升到 100%，此时面板的数据库读取、日志写入都会被阻塞，导致你访问面板时出现“无法连接”或响应极慢。</p>
-<p>系统资源耗尽： 如果服务器配置（尤其是 CPU 和内存）较低，大规模的递归遍历会占用大量系统资源，导致宝塔的面板服务（bt 守护进程）因资源不足而重启或挂起。</p>
-<p>反思：对大量文件做批量修改，不要直接用宝塔处理。</p></div>
+<div class="markdown-body" id="postBody"><p>参考：<a href="https://www.doubao.com/thread/w67c71b053846a67c" rel="nofollow">https://www.doubao.com/thread/w67c71b053846a67c</a></p>
+<ol>
+<li>安装wsl2</li>
+<li>wsl2安装Ubuntu24.04</li>
+<li>安装Docker Desktop ： <a href="https://www.docker.com/products/docker-desktop/" rel="nofollow">https://www.docker.com/products/docker-desktop/</a>  ，必须勾选： Use WSL 2 instead of Hyper-V<br>
+安装后，需要重启电脑，无需登录。</li>
+<li>docker --version 验证是否安装成功</li>
+<li>检测与wsl2的关联</li>
+</ol>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/d7c13246-9207-4c2b-adc3-ce5100add139"><img width="1047" height="510" alt="Image" src="https://github.com/user-attachments/assets/d7c13246-9207-4c2b-adc3-ce5100add139" style="max-width: 100%; height: auto; max-height: 510px;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/451b4b3e-9d0a-4919-b3d3-8f892719b51e"><img width="819" height="489" alt="Image" src="https://github.com/user-attachments/assets/451b4b3e-9d0a-4919-b3d3-8f892719b51e" style="max-width: 100%; height: auto; max-height: 489px;"></a></p>
+<ol start="6">
+<li>配置国内镜像加速</li>
+</ol></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>

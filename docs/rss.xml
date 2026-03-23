@@ -1,16 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜鱼的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜鱼的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Mon, 23 Mar 2026 06:30:49 +0000</lastBuildDate><managingEditor>阿炜鱼的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜鱼的编程日志</webMaster><item><title>php易错点</title><link>https://junwindxqw.github.io/post/php-yi-cuo-dian.html</link><description>```php
-error_reporting(E_ALL);
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜鱼的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜鱼的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Mon, 23 Mar 2026 10:18:37 +0000</lastBuildDate><managingEditor>阿炜鱼的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜鱼的编程日志</webMaster><item><title>windows中安装docker</title><link>https://junwindxqw.github.io/post/windows-zhong-an-zhuang-docker.html</link><description>参考：https://www.doubao.com/thread/w67c71b053846a67c
 
-$a = false;
-if (empty($a)) {
-    var_dump(111);  // 执行到这个分支
-} else {
-    var_dump(222);
-}
-
-var_dump(empty($a));  // bool(true)
-```。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/php-yi-cuo-dian.html</guid><pubDate>Tue, 03 Feb 2026 08:50:41 +0000</pubDate></item><item><title>云效生成SSH密钥对</title><link>https://junwindxqw.github.io/post/yun-xiao-sheng-cheng-SSH-mi-yao-dui.html</link><description>我的代码仓库放在阿里云效Codeup中，现在我在虚拟机中安装了Ubuntu 桌面版，我需要使用git拉取仓库到我新安装的Ubuntu系统中。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/yun-xiao-sheng-cheng-SSH-mi-yao-dui.html</guid><pubDate>Tue, 27 Jan 2026 10:20:28 +0000</pubDate></item><item><title>尝试新的跨平台 PowerShell https://aka.ms/pscore6</title><link>https://junwindxqw.github.io/post/chang-shi-xin-de-kua-ping-tai-%20PowerShell%20https---aka.ms-pscore6.html</link><description>
+1. 安装wsl2
+2. wsl2安装Ubuntu24.04
+3. 安装Docker Desktop ： https://www.docker.com/products/docker-desktop/  ，必须勾选： Use WSL 2 instead of Hyper-V
+     安装后，需要重启电脑，无需登录。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/windows-zhong-an-zhuang-docker.html</guid><pubDate>Mon, 23 Mar 2026 10:04:34 +0000</pubDate></item><item><title>尝试新的跨平台 PowerShell https://aka.ms/pscore6</title><link>https://junwindxqw.github.io/post/chang-shi-xin-de-kua-ping-tai-%20PowerShell%20https---aka.ms-pscore6.html</link><description>
 &lt;img width='754' height='566' alt='Image' src='https://github.com/user-attachments/assets/2e9fe0cd-068c-41c2-93c9-bcaf30010e63' /&gt;
 
 ```powershell
@@ -28,15 +22,4 @@ phpstorm中切换终端
 
 &lt;img width='803' height='344' alt='Image' src='https://github.com/user-attachments/assets/4bcb9fe5-5823-4bd6-aa9b-e5a976fd7b78' /&gt;。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/chang-shi-xin-de-kua-ping-tai-%20PowerShell%20https---aka.ms-pscore6.html</guid><pubDate>Mon, 26 Jan 2026 02:43:34 +0000</pubDate></item><item><title>phpstorm中，按esc对claude无效？</title><link>https://junwindxqw.github.io/post/phpstorm-zhong-%EF%BC%8C-an-esc-dui-claude-wu-xiao-%EF%BC%9F.html</link><description>提示 esc to exit，但是按esc，没有反应， 其实是phpstorm拦截了
 
-设置 -&gt; 工具 -&gt; 终端 -&gt; 取消勾选 “使用Escape将焦点移至编辑器”。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/phpstorm-zhong-%EF%BC%8C-an-esc-dui-claude-wu-xiao-%EF%BC%9F.html</guid><pubDate>Wed, 21 Jan 2026 07:51:34 +0000</pubDate></item><item><title>宝塔批量修改大量文件的权限会崩</title><link>https://junwindxqw.github.io/post/bao-ta-pi-liang-xiu-gai-da-liang-wen-jian-de-quan-xian-hui-beng.html</link><description>最近网站被攻击，为了加强安全，使用宝塔将public目录下uploads目录递归修改权限为700。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/bao-ta-pi-liang-xiu-gai-da-liang-wen-jian-de-quan-xian-hui-beng.html</guid><pubDate>Wed, 21 Jan 2026 03:52:47 +0000</pubDate></item><item><title>宝塔批量删除大量文件会崩</title><link>https://junwindxqw.github.io/post/bao-ta-pi-liang-shan-chu-da-liang-wen-jian-hui-beng.html</link><description>起因，我们的web项目中，runtime/log 下有大量的日志文件。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/bao-ta-pi-liang-shan-chu-da-liang-wen-jian-hui-beng.html</guid><pubDate>Mon, 19 Jan 2026 05:43:52 +0000</pubDate></item><item><title>fastadmin后台首页数据报表优化</title><link>https://junwindxqw.github.io/post/fastadmin-hou-tai-shou-ye-shu-ju-bao-biao-you-hua.html</link><description>fastadmin后台管理系统，首页就展示数据报表，如下图：
-
-&lt;img width='551' height='333' alt='Image' src='https://github.com/user-attachments/assets/7592237c-18b6-46ca-b966-d91de1d37836' /&gt;
-
-这种首页实时查询各种数据很不推荐，缺点：
-1. 每次登录到管理后台，都得加载一次这个统计页面，实际并不是每次都想看，产生大量无意义的查询开销。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/fastadmin-hou-tai-shou-ye-shu-ju-bao-biao-you-hua.html</guid><pubDate>Mon, 19 Jan 2026 01:45:32 +0000</pubDate></item><item><title>我的issues博客</title><link>https://junwindxqw.github.io/post/wo-de-issues-bo-ke.html</link><description>基于Gmeek
-
-搭建步骤：
-1. 创建 github账户同名.github.io 仓库
-2. fork Gmeek 仓库
-3. settings -&gt; build and deployment -&gt; source -&gt; GitHub Actions
-4. 在issues写作，记得加标签。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/wo-de-issues-bo-ke.html</guid><pubDate>Sun, 18 Jan 2026 01:31:25 +0000</pubDate></item></channel></rss>
+设置 -&gt; 工具 -&gt; 终端 -&gt; 取消勾选 “使用Escape将焦点移至编辑器”。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/phpstorm-zhong-%EF%BC%8C-an-esc-dui-claude-wu-xiao-%EF%BC%9F.html</guid><pubDate>Wed, 21 Jan 2026 07:51:34 +0000</pubDate></item><item><title>批量删除文件，批量修改文件权限导致宝塔挂了</title><link>https://junwindxqw.github.io/post/pi-liang-shan-chu-wen-jian-%EF%BC%8C-pi-liang-xiu-gai-wen-jian-quan-xian-dao-zhi-bao-ta-gua-le.html</link><description>1. 删除项目runtime下的大量日志文件。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/pi-liang-shan-chu-wen-jian-%EF%BC%8C-pi-liang-xiu-gai-wen-jian-quan-xian-dao-zhi-bao-ta-gua-le.html</guid><pubDate>Wed, 21 Jan 2026 03:52:47 +0000</pubDate></item><item><title>web管理后台首页优化</title><link>https://junwindxqw.github.io/post/web-guan-li-hou-tai-shou-ye-you-hua.html</link><description>某些管理后台，喜欢在首页展示各种统计数据。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/web-guan-li-hou-tai-shou-ye-you-hua.html</guid><pubDate>Mon, 19 Jan 2026 01:45:32 +0000</pubDate></item></channel></rss>
