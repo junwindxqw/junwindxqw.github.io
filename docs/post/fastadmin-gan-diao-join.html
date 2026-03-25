@@ -13,14 +13,12 @@
 <meta name="description" content="<img width='306' height='255' alt='Image' src='https://github.com/user-attachments/assets/6ef44a49-5ddc-4a70-a029-189501f71d1c' />
 
 解决办法： 
-
-    把需要联表查询的条件，提前查出来。">
+- 把需要联表查询的条件，提前查出来。">
 <meta property="og:title" content="fastadmin干掉join">
 <meta property="og:description" content="<img width='306' height='255' alt='Image' src='https://github.com/user-attachments/assets/6ef44a49-5ddc-4a70-a029-189501f71d1c' />
 
 解决办法： 
-
-    把需要联表查询的条件，提前查出来。">
+- 把需要联表查询的条件，提前查出来。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://junwindxqw.github.io/post/fastadmin-gan-diao-join.html">
 <meta property="og:image" content="https://github.com/junwindxqw.png">
@@ -93,14 +91,34 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/6ef44a49-5ddc-4a70-a029-189501f71d1c"><img width="306" height="255" alt="Image" src="https://github.com/user-attachments/assets/6ef44a49-5ddc-4a70-a029-189501f71d1c" style="max-width: 100%; height: auto; max-height: 255px;"></a></p>
 <p>解决办法：</p>
-<pre class="notranslate"><code class="notranslate">把需要联表查询的条件，提前查出来。 用 in ， 附加到主表。
-</code></pre>
-<div class="highlight highlight-text-html-php"><pre class="notranslate"><span class="pl-s1"><span class="pl-c1">$</span>oWhere</span> = [
-    <span class="pl-s">'<span class="pl-s">userid</span>'</span> =&gt; [<span class="pl-s">'<span class="pl-s">in</span>'</span>, [<span class="pl-c1">1</span>,<span class="pl-c1">2</span>,<span class="pl-c1">3</span>]],
-    <span class="pl-s">'<span class="pl-s">cid</span>'</span> =&gt; [<span class="pl-s">'<span class="pl-s">in</span>'</span>, [<span class="pl-c1">4</span>,<span class="pl-c1">5</span>,<span class="pl-c1">6</span>]],
-    ...<span class="pl-c1">.</span>.<span class="pl-c1">.</span>
-];</pre></div>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/1bc2f396-5d80-4480-b4d0-861a72a26db9"><img width="587" height="313" alt="Image" src="https://github.com/user-attachments/assets/1bc2f396-5d80-4480-b4d0-861a72a26db9" style="max-width: 100%; height: auto; max-height: 313px;"></a></p></div>
+<ul>
+<li>把需要联表查询的条件，提前查出来。 用 in ， 附加到主表。</li>
+<li>比如有个筛选条件是user表的昵称</li>
+</ul>
+<div class="highlight highlight-text-html-php"><pre class="notranslate"><span class="pl-s1"><span class="pl-c1">$</span>uWhere</span> = [];
+<span class="pl-k">if</span> (<span class="pl-en">isset</span>(<span class="pl-s1"><span class="pl-c1">$</span>filter</span>[<span class="pl-s">'<span class="pl-s">nickname</span>'</span>])) {
+    <span class="pl-s1"><span class="pl-c1">$</span>uWhere</span>[<span class="pl-s">'<span class="pl-s">nickname</span>'</span>] = [<span class="pl-s">'<span class="pl-s">like</span>'</span>, <span class="pl-s">"<span class="pl-s">%</span>{<span class="pl-s1"><span class="pl-c1">$</span>filter</span>[<span class="pl-s">'<span class="pl-s">nickname</span>'</span>]}<span class="pl-s">%</span>"</span>];
+    unset(<span class="pl-s1"><span class="pl-c1">$</span>filter</span>[<span class="pl-s">'<span class="pl-s">nickname</span>'</span>], <span class="pl-s1"><span class="pl-c1">$</span>op</span>[<span class="pl-s">'<span class="pl-s">nickname</span>'</span>]);
+}
+<span class="pl-c">// user表的其它筛选条件都可以放在$uWhere中</span>
+<span class="pl-k">if</span> (!<span class="pl-en">empty</span>(<span class="pl-s1"><span class="pl-c1">$</span>uWhere</span> )) {
+     <span class="pl-c">// 绑定userId条件到主查表中，因为主查表中是有userId字段的，这样就把本身要join user 的查询给干掉了。</span>
+    <span class="pl-s1"><span class="pl-c1">$</span>filter</span>[<span class="pl-s">'<span class="pl-s">userId</span>'</span>] = Db::<span class="pl-en">name</span>(<span class="pl-s">'<span class="pl-s">user</span>'</span>)-&gt;<span class="pl-en">where</span>(<span class="pl-s1"><span class="pl-c1">$</span>uWhere</span>)-&gt;<span class="pl-en">column</span>(<span class="pl-s">'<span class="pl-s">id</span>'</span>) ?? [];
+    <span class="pl-s1"><span class="pl-c1">$</span>op</span>[<span class="pl-s">'<span class="pl-s">userId</span>'</span>] = <span class="pl-s">'<span class="pl-s">in</span>'</span>;
+}
+
+<span class="pl-c">// 其它条件处理 ... </span>
+
+<span class="pl-s1"><span class="pl-c1">$</span><span class="pl-smi">this</span></span>-&gt;<span class="pl-c1">request</span>-&gt;<span class="pl-en">get</span>([<span class="pl-s">'<span class="pl-s">filter</span>'</span> =&gt; <span class="pl-en">json_encode</span>(<span class="pl-s1"><span class="pl-c1">$</span>filter</span>)]);
+<span class="pl-s1"><span class="pl-c1">$</span><span class="pl-smi">this</span></span>-&gt;<span class="pl-c1">request</span>-&gt;<span class="pl-en">get</span>([<span class="pl-s">'<span class="pl-s">op</span>'</span> =&gt; <span class="pl-en">json_encode</span>(<span class="pl-s1"><span class="pl-c1">$</span>op</span>)]);
+<span class="pl-en">list</span>(<span class="pl-s1"><span class="pl-c1">$</span>where</span>, <span class="pl-s1"><span class="pl-c1">$</span>sort</span>, <span class="pl-s1"><span class="pl-c1">$</span>order</span>, <span class="pl-s1"><span class="pl-c1">$</span>offset</span>, <span class="pl-s1"><span class="pl-c1">$</span>limit</span>) = <span class="pl-s1"><span class="pl-c1">$</span><span class="pl-smi">this</span></span>-&gt;<span class="pl-en">buildparams</span>();
+
+<span class="pl-c">// 此时 多 join 就被干为 单表查询了。 实测速度提升明显。</span>
+<span class="pl-s1"><span class="pl-c1">$</span>list</span> = Db::<span class="pl-en">name</span>(<span class="pl-s">'<span class="pl-s">xxx</span>'</span>)
+      -&gt;<span class="pl-en">where</span>(<span class="pl-s1"><span class="pl-c1">$</span>where</span>)
+      -&gt;<span class="pl-en">field</span>(<span class="pl-s">'<span class="pl-s">*</span>'</span>)
+      -&gt;<span class="pl-en">order</span>(<span class="pl-s">"<span class="pl-s">id desc</span>"</span>)
+      -&gt;<span class="pl-en">paginate</span>(<span class="pl-s1"><span class="pl-c1">$</span>limit</span>);</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>

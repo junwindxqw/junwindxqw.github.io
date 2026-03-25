@@ -1,15 +1,31 @@
 <img width="306" height="255" alt="Image" src="https://github.com/user-attachments/assets/6ef44a49-5ddc-4a70-a029-189501f71d1c" />
 
 解决办法： 
-
-    把需要联表查询的条件，提前查出来。 用 in ， 附加到主表。
-
+- 把需要联表查询的条件，提前查出来。 用 in ， 附加到主表。
+- 比如有个筛选条件是user表的昵称
 ```php
-$oWhere = [
-    'userid' => ['in', [1,2,3]],
-    'cid' => ['in', [4,5,6]],
-    ......
-];
-```
+$uWhere = [];
+if (isset($filter['nickname'])) {
+    $uWhere['nickname'] = ['like', "%{$filter['nickname']}%"];
+    unset($filter['nickname'], $op['nickname']);
+}
+// user表的其它筛选条件都可以放在$uWhere中
+if (!empty($uWhere )) {
+     // 绑定userId条件到主查表中，因为主查表中是有userId字段的，这样就把本身要join user 的查询给干掉了。
+    $filter['userId'] = Db::name('user')->where($uWhere)->column('id') ?? [];
+    $op['userId'] = 'in';
+}
 
-<img width="587" height="313" alt="Image" src="https://github.com/user-attachments/assets/1bc2f396-5d80-4480-b4d0-861a72a26db9" />
+// 其它条件处理 ... 
+
+$this->request->get(['filter' => json_encode($filter)]);
+$this->request->get(['op' => json_encode($op)]);
+list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+
+// 此时 多 join 就被干为 单表查询了。 实测速度提升明显。
+$list = Db::name('xxx')
+      ->where($where)
+      ->field('*')
+      ->order("id desc")
+      ->paginate($limit);
+```
