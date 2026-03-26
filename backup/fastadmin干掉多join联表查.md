@@ -32,7 +32,11 @@ $list = Db::name('xxx')
 
 后面如果需要join表中的字段，可以再查出来，比如user表的nickname
 ```php
-$row = $list->rows();
+$rows = $list->items();
 $userList = Db::name('user')->whereIn('id', array_column($row, 'userId'))->column('nickname', 'id');
+foreach($rows as &$item) {
+    $item['nickname'] = $userList[$item['userId']] ?? '';
+}
+return json(["total" => $list->total(), "rows" => $rows]);
 ```
 
