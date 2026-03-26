@@ -29,3 +29,10 @@ $list = Db::name('xxx')
       ->order("id desc")
       ->paginate($limit);
 ```
+
+后面如果需要join表中的字段，可以再查出来，比如user表的nickname
+```php
+$row = $list->rows();
+$userList = Db::name('user')->whereIn('id', array_column($row, 'userId'))->column('nickname', 'id');
+```
+
