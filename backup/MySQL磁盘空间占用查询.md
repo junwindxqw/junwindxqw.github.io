@@ -8,7 +8,7 @@ GROUP BY table_schema
 ORDER BY 占用_G DESC;
 ```
 
-某个库下，表占用空间大小，按大到小排列：
+某个库下，所有的表，占用空间大小（按大到小排列）：
 ```sql
 SELECT
   table_name AS 表名,
@@ -22,7 +22,7 @@ WHERE table_schema = '我的库名称'
 ORDER BY (data_length + index_length) DESC;
 ```
 
-某个库下，表索引占用空间大小，从大到小排列：
+某个库下，所有的表，索引占用空间大小（从大到小排列）：
 ```sql
 SELECT
   table_name AS 表名,

@@ -20,7 +20,7 @@ GROUP BY table_schema
 ORDER BY 占用_G DESC;
 ```
 
-某个库下，表占用空间大小，按大到小排列：
+某个库下，所有的表，占用空间大小（按大到小排列）：
 ```sql
 SELECT
   table_name AS 表名,
@@ -34,7 +34,7 @@ WHERE table_schema = '我的库名称'
 ORDER BY (data_length + index_length) DESC;
 ```
 
-某个库下，表索引占用空间大小，从大到小排列：
+某个库下，所有的表，索引占用空间大小（从大到小排列）：
 ```sql
 SELECT
   table_name AS 表名,
@@ -77,7 +77,7 @@ GROUP BY table_schema
 ORDER BY 占用_G DESC;
 ```
 
-某个库下，表占用空间大小，按大到小排列：
+某个库下，所有的表，占用空间大小（按大到小排列）：
 ```sql
 SELECT
   table_name AS 表名,
@@ -91,7 +91,7 @@ WHERE table_schema = '我的库名称'
 ORDER BY (data_length + index_length) DESC;
 ```
 
-某个库下，表索引占用空间大小，从大到小排列：
+某个库下，所有的表，索引占用空间大小（从大到小排列）：
 ```sql
 SELECT
   table_name AS 表名,
@@ -200,7 +200,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-k">FROM</span> <span class="pl-c1">information_schema</span>.<span class="pl-c1">TABLES</span>
 <span class="pl-k">GROUP BY</span> table_schema
 <span class="pl-k">ORDER BY</span> 占用_G <span class="pl-k">DESC</span>;</pre></div>
-<p>某个库下，表占用空间大小，按大到小排列：</p>
+<p>某个库下，所有的表，占用空间大小（按大到小排列）：</p>
 <div class="highlight highlight-source-sql"><pre class="notranslate"><span class="pl-k">SELECT</span>
   table_name <span class="pl-k">AS</span> 表名,
   ROUND((data_length <span class="pl-k">+</span> index_length) <span class="pl-k">/</span> <span class="pl-c1">1024</span> <span class="pl-k">/</span> <span class="pl-c1">1024</span> <span class="pl-k">/</span> <span class="pl-c1">1024</span>, <span class="pl-c1">2</span>) <span class="pl-k">AS</span> 总占用_G,
@@ -211,7 +211,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-k">WHERE</span> table_schema <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>我的库名称<span class="pl-pds">'</span></span>
   <span class="pl-k">AND</span> table_type <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>BASE TABLE<span class="pl-pds">'</span></span>
 <span class="pl-k">ORDER BY</span> (data_length <span class="pl-k">+</span> index_length) <span class="pl-k">DESC</span>;</pre></div>
-<p>某个库下，表索引占用空间大小，从大到小排列：</p>
+<p>某个库下，所有的表，索引占用空间大小（从大到小排列）：</p>
 <div class="highlight highlight-source-sql"><pre class="notranslate"><span class="pl-k">SELECT</span>
   table_name <span class="pl-k">AS</span> 表名,
   ROUND(index_length <span class="pl-k">/</span> <span class="pl-c1">1024</span> <span class="pl-k">/</span> <span class="pl-c1">1024</span> <span class="pl-k">/</span> <span class="pl-c1">1024</span>, <span class="pl-c1">2</span>) <span class="pl-k">AS</span> 索引占用_G,
