@@ -30,7 +30,7 @@ SELECT
   ROUND(data_length / 1024 / 1024 / 1024, 2) AS 数据占用_G,
   ROUND((data_length + index_length) / 1024 / 1024 / 1024, 2) AS 总占用_G
 FROM information_schema.TABLES
-WHERE table_schema = 'gdyj_yjaqpx_com'  -- 你的库名
+WHERE table_schema = 'xxxxxxxx'  -- 你的库名
   AND table_type = 'BASE TABLE'
 ORDER BY index_length DESC;  -- 按索引大小排序
 ```

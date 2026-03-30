@@ -42,7 +42,7 @@ SELECT
   ROUND(data_length / 1024 / 1024 / 1024, 2) AS 数据占用_G,
   ROUND((data_length + index_length) / 1024 / 1024 / 1024, 2) AS 总占用_G
 FROM information_schema.TABLES
-WHERE table_schema = 'gdyj_yjaqpx_com'  -- 你的库名
+WHERE table_schema = 'xxxxxxxx'  -- 你的库名
   AND table_type = 'BASE TABLE'
 ORDER BY index_length DESC;  -- 按索引大小排序
 ```
@@ -88,7 +88,7 @@ SELECT
   ROUND(data_length / 1024 / 1024 / 1024, 2) AS 数据占用_G,
   ROUND((data_length + index_length) / 1024 / 1024 / 1024, 2) AS 总占用_G
 FROM information_schema.TABLES
-WHERE table_schema = 'gdyj_yjaqpx_com'  -- 你的库名
+WHERE table_schema = 'xxxxxxxx'  -- 你的库名
   AND table_type = 'BASE TABLE'
 ORDER BY index_length DESC;  -- 按索引大小排序
 ```
@@ -196,7 +196,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
   ROUND(data_length <span class="pl-k">/</span> <span class="pl-c1">1024</span> <span class="pl-k">/</span> <span class="pl-c1">1024</span> <span class="pl-k">/</span> <span class="pl-c1">1024</span>, <span class="pl-c1">2</span>) <span class="pl-k">AS</span> 数据占用_G,
   ROUND((data_length <span class="pl-k">+</span> index_length) <span class="pl-k">/</span> <span class="pl-c1">1024</span> <span class="pl-k">/</span> <span class="pl-c1">1024</span> <span class="pl-k">/</span> <span class="pl-c1">1024</span>, <span class="pl-c1">2</span>) <span class="pl-k">AS</span> 总占用_G
 <span class="pl-k">FROM</span> <span class="pl-c1">information_schema</span>.<span class="pl-c1">TABLES</span>
-<span class="pl-k">WHERE</span> table_schema <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>gdyj_yjaqpx_com<span class="pl-pds">'</span></span>  <span class="pl-c"><span class="pl-c">--</span> 你的库名</span>
+<span class="pl-k">WHERE</span> table_schema <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>xxxxxxxx<span class="pl-pds">'</span></span>  <span class="pl-c"><span class="pl-c">--</span> 你的库名</span>
   <span class="pl-k">AND</span> table_type <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>BASE TABLE<span class="pl-pds">'</span></span>
 <span class="pl-k">ORDER BY</span> index_length <span class="pl-k">DESC</span>;  <span class="pl-c"><span class="pl-c">--</span> 按索引大小排序</span></pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
