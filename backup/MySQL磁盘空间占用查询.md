@@ -35,7 +35,18 @@ WHERE table_schema = 'xxxxxxxx'  -- 你的库名
 ORDER BY index_length DESC;  -- 按索引大小排序
 ```
 
-
+某个库下，某张表的所占空间大小：
+```sql
+SELECT
+  table_name AS 表名,
+  ROUND((data_length + index_length) / 1024 / 1024 / 1024, 2) AS 总占用_G,
+  ROUND(data_length / 1024 / 1024 / 1024, 2) AS 数据_G,
+  ROUND(index_length / 1024 / 1024 / 1024, 2) AS 索引_G,
+  table_rows AS 行数
+FROM information_schema.TABLES
+WHERE table_schema = 'xxxx'  -- 你的库名
+  AND table_name = 'xxxxx';  -- 你要查的表
+```
 
 
 
