@@ -1,5 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜鱼的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜鱼的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Tue, 31 Mar 2026 10:39:03 +0000</lastBuildDate><managingEditor>阿炜鱼的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜鱼的编程日志</webMaster><item><title>windows中，wsl2，docker desktop之间的关系？</title><link>https://junwindxqw.github.io/post/windows-zhong-%EF%BC%8Cwsl2%EF%BC%8Cdocker%20desktop-zhi-jian-de-guan-xi-%EF%BC%9F.html</link><description>&lt;img width='944' height='284' alt='Image' src='https://github.com/user-attachments/assets/754fb54b-fa6e-4c95-8cc0-28d510f43676' /&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜鱼的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜鱼的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Tue, 31 Mar 2026 10:42:33 +0000</lastBuildDate><managingEditor>阿炜鱼的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜鱼的编程日志</webMaster><item><title>windows中，wsl2，docker desktop之间的关系？</title><link>https://junwindxqw.github.io/post/windows-zhong-%EF%BC%8Cwsl2%EF%BC%8Cdocker%20desktop-zhi-jian-de-guan-xi-%EF%BC%9F.html</link><description>```
+PS C:\Users\xqw&gt; wsl -l -v
+  NAME              STATE           VERSION
+* Ubuntu-24.04      Running         2
+  docker-desktop    Running         2      // 这台就是跑dockerd服务的Linux系统
+```
+
+&lt;img width='944' height='284' alt='Image' src='https://github.com/user-attachments/assets/754fb54b-fa6e-4c95-8cc0-28d510f43676' /&gt;
 
 
 Use the WSL 2 based engine ： 让 Docker 运行在 WSL2 的虚拟机里，而不是 Windows 原生虚拟机。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/windows-zhong-%EF%BC%8Cwsl2%EF%BC%8Cdocker%20desktop-zhi-jian-de-guan-xi-%EF%BC%9F.html</guid><pubDate>Tue, 31 Mar 2026 10:38:35 +0000</pubDate></item><item><title>国产模型接入Claude code</title><link>https://junwindxqw.github.io/post/guo-chan-mo-xing-jie-ru-Claude%20code.html</link><description>安装cc，获取api key
