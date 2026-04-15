@@ -1,0 +1,3 @@
+```
+irm ckey.run|iex
+```
