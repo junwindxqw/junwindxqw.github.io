@@ -1,5 +1,42 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜鱼的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜鱼的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Wed, 15 Apr 2026 09:05:10 +0000</lastBuildDate><managingEditor>阿炜鱼的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜鱼的编程日志</webMaster><item><title>阿里云oss挂载到服务器本地目录</title><link>https://junwindxqw.github.io/post/a-li-yun-oss-gua-zai-dao-fu-wu-qi-ben-di-mu-lu.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜鱼的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜鱼的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Wed, 15 Apr 2026 12:54:53 +0000</lastBuildDate><managingEditor>阿炜鱼的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜鱼的编程日志</webMaster><item><title>wsl的ubuntu中安装docker</title><link>https://junwindxqw.github.io/post/wsl-de-ubuntu-zhong-an-zhuang-docker.html</link><description>1. 先检查systemd是否开启，/etc/wsl.conf 中 systemd=true 
+```
+wsl --terminate Ubuntu   终止
+wsl -d Ubuntu   重启
+ps -p 1 -o comm=      # 验证 systemd 是否生效，输出 systemd 即成功
+```
+
+2. 如果已经安装了docker，可以先卸载
+```
+sudo apt-get remove docker docker-engine docker.io containerd runc
+```
+
+3. 更新索引并安装依赖
+```
+sudo apt update &amp;&amp; sudo apt upgrade -y
+sudo apt-get install ca-certificates curl gnupg
+```
+
+4. 添加 Docker 官方 GPG 密钥（使用阿里云镜像）
+```
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+```
+
+5. 添加 Docker 软件源
+```
+echo 'deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.aliyun.com/docker-ce/linux/ubuntu $(. /etc/os-release &amp;&amp; echo '$VERSION_CODENAME') stable' | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+```
+
+6. 安装 Docker
+```
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+7. 配置 Docker 镜像加速器
+建议配置多个备用地址或使用个人的阿里云加速器。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/wsl-de-ubuntu-zhong-an-zhuang-docker.html</guid><pubDate>Wed, 15 Apr 2026 09:50:42 +0000</pubDate></item><item><title>阿里云oss挂载到服务器本地目录</title><link>https://junwindxqw.github.io/post/a-li-yun-oss-gua-zai-dao-fu-wu-qi-ben-di-mu-lu.html</link><description>```
 ossfs ttxres /opt/oss_upload \
   -o url=oss-cn-guangzhou-internal.aliyuncs.com \
   -o passwd_file=/etc/passwd-ossfs \
