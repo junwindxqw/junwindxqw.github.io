@@ -1,5 +1,37 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜鱼的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜鱼的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Tue, 14 Apr 2026 17:05:10 +0000</lastBuildDate><managingEditor>阿炜鱼的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜鱼的编程日志</webMaster><item><title>富文本编辑器中的内容导致页面异常</title><link>https://junwindxqw.github.io/post/fu-wen-ben-bian-ji-qi-zhong-de-nei-rong-dao-zhi-ye-mian-yi-chang.html</link><description>&lt;img width='606' height='237' alt='Image' src='https://github.com/user-attachments/assets/67f67838-9da7-4893-b586-a3bbfe203990' /&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜鱼的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜鱼的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Wed, 15 Apr 2026 02:53:26 +0000</lastBuildDate><managingEditor>阿炜鱼的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜鱼的编程日志</webMaster><item><title>wsl基本使用</title><link>https://junwindxqw.github.io/post/wsl-ji-ben-shi-yong.html</link><description>```powershell
+// 安装wsl
+wsl --install  （自动开启功能 + 安装默认 Ubuntu）
+
+// 列出可在线安装的 Linux 发行版
+wsl --list --online    // 简写 wsl -l -o
+
+// 安装某台 Linux（例：Ubuntu-24.04）
+wsl --install -d Ubuntu-24.04
+
+// 列出已安装的
+wsl -l -v
+
+// 启动某台 Linux（进入默认发行版）
+wsl
+// 启动指定 Linux
+wsl -d Ubuntu-24.04
+
+// 停止所有已运行的Linux
+wsl --shutdown
+
+// 停止某台运行的Linux
+wsl --terminate Ubuntu-24.04   // 简写  wsl -t Ubuntu-24.04
+
+// 备份某台 Linux（导出为 .tar 文件）
+wsl --export Ubuntu-24.04 D:\backup\ubuntu2404.tar
+
+// 卸载某台Linux发行版（卸载前先停止运行）
+wsl --unregister Ubuntu-24.04
+
+// 导入备份好的某台 Linux（恢复系统）
+wsl --import 新名称 安装路径 备份文件.tar  // 示例： wsl --import Ubuntu24 D:\WSL\Ubuntu24 D:\backup\ubuntu2404.tar
+```。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/wsl-ji-ben-shi-yong.html</guid><pubDate>Wed, 15 Apr 2026 02:52:56 +0000</pubDate></item><item><title>富文本编辑器中的内容导致页面异常</title><link>https://junwindxqw.github.io/post/fu-wen-ben-bian-ji-qi-zhong-de-nei-rong-dao-zhi-ye-mian-yi-chang.html</link><description>&lt;img width='606' height='237' alt='Image' src='https://github.com/user-attachments/assets/67f67838-9da7-4893-b586-a3bbfe203990' /&gt;
 
 &lt;img width='589' height='213' alt='Image' src='https://github.com/user-attachments/assets/8cada708-d433-4f6f-a782-c3a12855b476' /&gt;
 
