@@ -2,5 +2,10 @@
     "title":"阿炜鱼的编程日志",
     "subTitle":"学无止境，有容乃大",
     "avatarUrl":"https://github.com/junwindxqw.png",
-    "GMEEK_VERSION":"last"
+    "GMEEK_VERSION":"last",
+    "startSite":"02/08/2025"
+    "themeMode":"fix",
+    "dayTheme":"dark_colorblind",
+    "nightTheme":"github-dark",
+    "bottomText":"转载请注明出处",
 }
