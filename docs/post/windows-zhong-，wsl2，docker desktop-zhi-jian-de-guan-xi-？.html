@@ -105,7 +105,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 * Ubuntu-24.04      Running         2
   docker-desktop    Running         2      // 这台就是跑dockerd服务的Linux系统
 </code></pre>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/754fb54b-fa6e-4c95-8cc0-28d510f43676"><img width="944" height="284" alt="Image" src="https://github.com/user-attachments/assets/754fb54b-fa6e-4c95-8cc0-28d510f43676" style="max-width: 100%; height: auto; max-height: 284px;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/754fb54b-fa6e-4c95-8cc0-28d510f43676"><img width="944" height="284" alt="Image" src="https://github.com/user-attachments/assets/754fb54b-fa6e-4c95-8cc0-28d510f43676" style="max-width: 100%; height: auto; max-height: 284px;; aspect-ratio: 944 / 284; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a></p>
 <p>Use the WSL 2 based engine ： 让 Docker 运行在 WSL2 的虚拟机里，而不是 Windows 原生虚拟机。</p>
 <p>装的 Docker Desktop 其实是个 “外壳”<br>
 真正跑 Docker 服务（dockerd）、跑容器的环境<br>
@@ -127,7 +127,7 @@ Docker 会自动往 Windows 的 hosts 文件写一行：192.168.65.2  host.docke
 <p>两个配置的关系总结<br>
 第一个：决定 Docker 是跑在 WSL2 里（你现在的情况）<br>
 第二个：决定 Windows 能不能用 host.docker.internal 访问 Docker 环境</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/9e19027f-5fcd-4ef2-bfc4-b45874593958"><img width="888" height="327" alt="Image" src="https://github.com/user-attachments/assets/9e19027f-5fcd-4ef2-bfc4-b45874593958" style="max-width: 100%; height: auto; max-height: 327px;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/9e19027f-5fcd-4ef2-bfc4-b45874593958"><img width="888" height="327" alt="Image" src="https://github.com/user-attachments/assets/9e19027f-5fcd-4ef2-bfc4-b45874593958" style="max-width: 100%; height: auto; max-height: 327px;; aspect-ratio: 888 / 327; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a></p>
 <p>Enable integration with my default WSL distro：</p>
 <ul>
 <li>它会自动把 Docker 服务（/var/run/docker.sock） 共享给你当前默认的那个 WSL 系统。</li>
