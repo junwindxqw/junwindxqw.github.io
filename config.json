@@ -8,5 +8,6 @@
     "dayTheme":"light",
     "nightTheme":"dark",
     "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
-    "script":"<script src='https://junwindxqw.github.io/assets/articletoc.js'></script>"
+    "allHead":"<script src='https://junwindxqw.github.io/assets/GmeekVercount.js'></script>",
+    "script":"<script src='https://code.buxiantang.top/assets/backtop.js'></script><script src='https://junwindxqw.github.io/assets/articletoc.js'></script><script src='https://junwindxqw.github.io/assets/lightbox.js'></script>"
 }
