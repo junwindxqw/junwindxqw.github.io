@@ -5,8 +5,8 @@
     "GMEEK_VERSION":"last",
     "startSite":"02/08/2025",
     "themeMode":"manual",
-    "dayTheme":"dark",
-    "nightTheme":"github-dark",
+    "dayTheme":"light",
+    "nightTheme":"dark",
     "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
     "allHead":"<script src='https://junwindxqw.github.io/assets/GmeekVercount.js'></script>",
     "script":"<script src='https://junwindxqw.github.io/assets/articletoc.js'></script><script src='https://junwindxqw.github.io/assets/lightbox.js'></script>"
