@@ -1,13 +1,13 @@
 {
-    "title":"阿炜鱼的编程日志",
+    "title":"阿炜的编程日志",
     "subTitle":"学无止境，有容乃大",
     "avatarUrl":"https://github.com/junwindxqw.png",
     "GMEEK_VERSION":"last",
-    "startSite":"02/08/2025",
-    "themeMode":"manual",
-    "dayTheme":"light",
-    "nightTheme":"dark",
+    "startSite":"01/08/2026",
+    "themeMode":"fix",
+    "dayTheme":"dark",
+    "nightTheme":"dark-blue",
     "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
     "allHead":"<script src='https://junwindxqw.github.io/assets/GmeekVercount.js'></script>",
-    "script":"<script src='https://code.buxiantang.top/assets/backtop.js'></script><script src='https://junwindxqw.github.io/assets/articletoc.js'></script><script src='https://junwindxqw.github.io/assets/lightbox.js'></script>"
+    "script":"<script src='https://junwindxqw.github.io/assets/backtop.js'></script><script src='https://junwindxqw.github.io/assets/articletoc.js'></script><script src='https://junwindxqw.github.io/assets/lightbox.js'></script>"
 }
