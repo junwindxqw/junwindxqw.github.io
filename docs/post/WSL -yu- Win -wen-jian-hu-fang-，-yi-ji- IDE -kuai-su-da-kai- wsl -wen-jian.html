@@ -7,34 +7,34 @@
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <script src='https://junwindxqw.github.io/assets/GmeekVercount.js'></script>
     <link rel="icon" href="https://github.com/junwindxqw.png">
-<meta name="description" content="win 的磁盘挂载在 wsl 的 /mnt 下
+<meta name="description" content="> win 的磁盘挂载在 wsl 的 /mnt 下
 
-WSL → Windows
+## WSL → Windows
 - 访问文件：`/mnt/c/`  ` /mnt/d/`
 - 打开当前目录：`explorer.exe .`
 
 
-Windows → WSL
+## Windows → WSL
 - 访问路径：`\\wsl.localhost`   `\\wsl$`
 
-wsl 中快捷使用 vscode 打开
+## wsl 中快捷使用 vscode 打开
 ```sh
 code .    # 如果打不开，可以参考下面的phpstorm配置别名
 code docker-compose.yml
 ```
 或者直接在文件资源管理器中先打开wsl目录，然后右键菜单中选择vscode打开。">
 <meta property="og:title" content="WSL 与 Win 文件互访，以及 IDE 快速打开 wsl 文件">
-<meta property="og:description" content="win 的磁盘挂载在 wsl 的 /mnt 下
+<meta property="og:description" content="> win 的磁盘挂载在 wsl 的 /mnt 下
 
-WSL → Windows
+## WSL → Windows
 - 访问文件：`/mnt/c/`  ` /mnt/d/`
 - 打开当前目录：`explorer.exe .`
 
 
-Windows → WSL
+## Windows → WSL
 - 访问路径：`\\wsl.localhost`   `\\wsl$`
 
-wsl 中快捷使用 vscode 打开
+## wsl 中快捷使用 vscode 打开
 ```sh
 code .    # 如果打不开，可以参考下面的phpstorm配置别名
 code docker-compose.yml
@@ -110,21 +110,23 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>win 的磁盘挂载在 wsl 的 /mnt 下</p>
-<p>WSL → Windows</p>
+<div class="markdown-body" id="postBody"><blockquote>
+<p>win 的磁盘挂载在 wsl 的 /mnt 下</p>
+</blockquote>
+<h2>WSL → Windows</h2>
 <ul>
 <li>访问文件：<code class="notranslate">/mnt/c/</code>  <code class="notranslate"> /mnt/d/</code></li>
 <li>打开当前目录：<code class="notranslate">explorer.exe .</code></li>
 </ul>
-<p>Windows → WSL</p>
+<h2>Windows → WSL</h2>
 <ul>
 <li>访问路径：<code class="notranslate">\\wsl.localhost</code>   <code class="notranslate">\\wsl$</code></li>
 </ul>
-<p>wsl 中快捷使用 vscode 打开</p>
+<h2>wsl 中快捷使用 vscode 打开</h2>
 <div class="highlight highlight-source-shell"><pre class="notranslate">code <span class="pl-c1">.</span>    <span class="pl-c"><span class="pl-c">#</span> 如果打不开，可以参考下面的phpstorm配置别名</span>
 code docker-compose.yml</pre></div>
 <p>或者直接在文件资源管理器中先打开wsl目录，然后右键菜单中选择vscode打开。</p>
-<p>wsl 中快捷使用 phpstorm 打开</p>
+<h2>wsl 中快捷使用 phpstorm 打开</h2>
 <div class="highlight highlight-source-shell"><pre class="notranslate">phpstorm64.exe <span class="pl-c1">.</span>     <span class="pl-c"><span class="pl-c">#</span> 如果不能打开，我们在wsl中添加一个命令</span>
 
 <span class="pl-c"><span class="pl-c">#</span> 配置别名</span>
