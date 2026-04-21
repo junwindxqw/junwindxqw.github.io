@@ -1,5 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Tue, 21 Apr 2026 02:06:53 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>为什么phpstorm远程原生模式打开的wsl项目，在版本管理中有很多更新的文件，但是我执行git status中，又没有这些文件。</title><link>https://junwindxqw.github.io/post/wei-shen-me-phpstorm-yuan-cheng-yuan-sheng-mo-shi-da-kai-de-wsl-xiang-mu-%EF%BC%8C-zai-ban-ben-guan-li-zhong-you-hen-duo-geng-xin-de-wen-jian-%EF%BC%8C-dan-shi-wo-zhi-xing-git%20status-zhong-%EF%BC%8C-you-mei-you-zhe-xie-wen-jian-%E3%80%82.html</link><description>## 尾符（CRLF/LF）不一致
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Tue, 21 Apr 2026 02:27:43 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>wsl中，将自己的用户给root权限</title><link>https://junwindxqw.github.io/post/wsl-zhong-%EF%BC%8C-jiang-zi-ji-de-yong-hu-gei-root-quan-xian.html</link><description>## 加入 sudo 用户组
+sudo 组的所有成员都拥有完整的管理员权限
+
+```
+sudo usermod -aG sudo xqw   // 关闭当前 WSL 终端窗口，重新打开，使组权限生效
+
+sudo whoami   验证权限
+```
+
+## 编辑 /etc/sudoers 文件
+
+```
+sudo visudo
+
+root    ALL=(ALL:ALL) ALL
+xqw     ALL=(ALL:ALL) ALL     // xqw     ALL=(ALL:ALL) NOPASSWD: ALL
+```
+若用 nano：按 Ctrl+O 保存 → Ctrl+X 退出。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/wsl-zhong-%EF%BC%8C-jiang-zi-ji-de-yong-hu-gei-root-quan-xian.html</guid><pubDate>Tue, 21 Apr 2026 02:27:12 +0000</pubDate></item><item><title>为什么phpstorm远程原生模式打开的wsl项目，在版本管理中有很多更新的文件，但是我执行git status中，又没有这些文件。</title><link>https://junwindxqw.github.io/post/wei-shen-me-phpstorm-yuan-cheng-yuan-sheng-mo-shi-da-kai-de-wsl-xiang-mu-%EF%BC%8C-zai-ban-ben-guan-li-zhong-you-hen-duo-geng-xin-de-wen-jian-%EF%BC%8C-dan-shi-wo-zhi-xing-git%20status-zhong-%EF%BC%8C-you-mei-you-zhe-xie-wen-jian-%E3%80%82.html</link><description>## 尾符（CRLF/LF）不一致
 File → Settings → Editor → Code Style → Line separator  ：  Unix and macOS (\n) 
 
 File Encodings  -&gt; Default line separator  ： LF
