@@ -12,7 +12,7 @@ git config --global core.eol lf
 # 忽略文件权限变化（第二个常见原因）
 git config --global core.filemode false
 # 强制重置工作区状态
-git checkout .
+git checkout .    // git restore . 
 ```
 
 ## PhpStorm 用了 Windows 的 Git，而不是 WSL 里的 Git
