@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Wed, 22 Apr 2026 02:40:58 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>Linux中安装Claude Code并接入minimax</title><link>https://junwindxqw.github.io/post/Linux-zhong-an-zhuang-Claude%20Code-bing-jie-ru-minimax.html</link><description>## 安装
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Wed, 22 Apr 2026 02:43:34 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>Linux中安装Claude Code并接入minimax</title><link>https://junwindxqw.github.io/post/Linux-zhong-an-zhuang-Claude%20Code-bing-jie-ru-minimax.html</link><description>## 安装
 
     sudo apt update &amp;&amp; sudo apt upgrade -y
     
@@ -42,7 +42,7 @@
     root    ALL=(ALL:ALL) ALL
     xqw     ALL=(ALL:ALL) ALL     // xqw     ALL=(ALL:ALL) NOPASSWD: ALL
 
-。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/linux-gei-mou-yong-hu-fu-yu-root-quan-xian.html</guid><pubDate>Tue, 21 Apr 2026 02:27:12 +0000</pubDate></item><item><title>为什么phpstorm远程原生模式打开的wsl项目，在版本管理中有很多更新的文件，但是我执行git status中，又没有这些文件。</title><link>https://junwindxqw.github.io/post/wei-shen-me-phpstorm-yuan-cheng-yuan-sheng-mo-shi-da-kai-de-wsl-xiang-mu-%EF%BC%8C-zai-ban-ben-guan-li-zhong-you-hen-duo-geng-xin-de-wen-jian-%EF%BC%8C-dan-shi-wo-zhi-xing-git%20status-zhong-%EF%BC%8C-you-mei-you-zhe-xie-wen-jian-%E3%80%82.html</link><description>## 尾符（CRLF/LF）不一致
+。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/linux-gei-mou-yong-hu-fu-yu-root-quan-xian.html</guid><pubDate>Tue, 21 Apr 2026 02:27:12 +0000</pubDate></item><item><title>phpstorm打开wsl中项目，git中有很多更新的文件</title><link>https://junwindxqw.github.io/post/phpstorm-da-kai-wsl-zhong-xiang-mu-%EF%BC%8Cgit-zhong-you-hen-duo-geng-xin-de-wen-jian.html</link><description>## 尾符（CRLF/LF）不一致
 File → Settings → Editor → Code Style → Line separator  ：  Unix and macOS (\n) 
 
 File Encodings  -&gt; Default line separator  ： LF
@@ -67,7 +67,7 @@ File → Settings → Version Control → Git  ：
 
 ## PhpStorm 缓存或索引异常
 
-点击 File → Invalidate Caches...，勾选 Clear file system cache and local history，然后重启 PhpStorm。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/wei-shen-me-phpstorm-yuan-cheng-yuan-sheng-mo-shi-da-kai-de-wsl-xiang-mu-%EF%BC%8C-zai-ban-ben-guan-li-zhong-you-hen-duo-geng-xin-de-wen-jian-%EF%BC%8C-dan-shi-wo-zhi-xing-git%20status-zhong-%EF%BC%8C-you-mei-you-zhe-xie-wen-jian-%E3%80%82.html</guid><pubDate>Tue, 21 Apr 2026 02:01:04 +0000</pubDate></item><item><title>composer dump-autoload</title><link>https://junwindxqw.github.io/post/composer%20dump-autoload.html</link><description>## composer 正常更新安装依赖的方式
+点击 File → Invalidate Caches...，勾选 Clear file system cache and local history，然后重启 PhpStorm。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/phpstorm-da-kai-wsl-zhong-xiang-mu-%EF%BC%8Cgit-zhong-you-hen-duo-geng-xin-de-wen-jian.html</guid><pubDate>Tue, 21 Apr 2026 02:01:04 +0000</pubDate></item><item><title>composer dump-autoload</title><link>https://junwindxqw.github.io/post/composer%20dump-autoload.html</link><description>## composer 正常更新安装依赖的方式
 
 对于PHP的项目，依赖关系文件为  composer.json， 首次部署，执行 composer update 会安装更新依赖，并且生成一个 composer.lock，这个文件是用来锁定依赖版本。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/composer%20dump-autoload.html</guid><pubDate>Mon, 20 Apr 2026 09:49:19 +0000</pubDate></item><item><title>Ubuntu中安装nginx</title><link>https://junwindxqw.github.io/post/Ubuntu-zhong-an-zhuang-nginx.html</link><description>## 安装
 ```
