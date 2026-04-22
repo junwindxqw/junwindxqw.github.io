@@ -6,7 +6,6 @@ nginx -v    # 查看是否已安装
 sudo systemctl status nginx   # 查看是否在运行
 ```
 浏览器访问：http://localhost/
-<img width="542" height="192" alt="Image" src="https://github.com/user-attachments/assets/bc4581f2-7f66-46f4-bf28-708cf47258cb" />
 
 ## 常用管理命令
 ```
