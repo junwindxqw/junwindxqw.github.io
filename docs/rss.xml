@@ -1,55 +1,41 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Tue, 21 Apr 2026 10:14:50 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>wsl中，安装Claude Code</title><link>https://junwindxqw.github.io/post/wsl-zhong-%EF%BC%8C-an-zhuang-Claude%20Code.html</link><description>## 安装
-```
-sudo apt update &amp;&amp; sudo apt upgrade -y
-sudo apt install -y curl git build-essential
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Wed, 22 Apr 2026 02:36:53 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>wsl中，安装Claude Code</title><link>https://junwindxqw.github.io/post/wsl-zhong-%EF%BC%8C-an-zhuang-Claude%20Code.html</link><description>## 安装
 
-curl -fsSL https://claude.ai/install.sh | bash    // 安装位置：~/.local/bin/claude
-
-claude --version
-```
-
-&lt;img width='721' height='375' alt='Image' src='https://github.com/user-attachments/assets/fdb424db-5116-4cc7-8a96-e02597b902a5' /&gt;
+    sudo apt update &amp;&amp; sudo apt upgrade -y
+    
+    sudo apt install -y curl git build-essential
+    
+    curl -fsSL https://claude.ai/install.sh | bash    // 安装位置：~/.local/bin/claude
+    
+    claude --version
 
 
 若提示 claude: command not found，执行：
 
-```
-echo 'export PATH='$HOME/.local/bin:$PATH'' &gt;&gt; ~/.bashrc
-source ~/.bashrc
-```
-
-## 常见的一些问题
-&lt;img width='426' height='557' alt='Image' src='https://github.com/user-attachments/assets/78afe793-9032-42d0-832d-4c364dd89690' /&gt;
+    echo 'export PATH='$HOME/.local/bin:$PATH'' &gt;&gt; ~/.bashrc
+    source ~/.bashrc
 
 ## 接入 minimax
-```sh
-# 打开配置文件（不存在则自动创建）
-nano ~/.claude/settings.json
 
-{
-  'env': {
-    'ANTHROPIC_BASE_URL': 'https://api.minimaxi.com/anthropic',
-	'ANTHROPIC_AUTH_TOKEN': 'xxxxxxx',
-	'API_TIMEOUT_MS': '3000000',
-	'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC': 1,
-	'ANTHROPIC_MODEL': 'MiniMax-M2.7',
-	'ANTHROPIC_SMALL_FAST_MODEL': 'MiniMax-M2.7',
-	'ANTHROPIC_DEFAULT_SONNET_MODEL': 'MiniMax-M2.7',
-	'ANTHROPIC_DEFAULT_OPUS_MODEL': 'MiniMax-M2.7',
-	'ANTHROPIC_DEFAULT_HAIKU_MODEL': 'MiniMax-M2.7'
-  }
-}
-
-
-nano ~/.claude.json
-
-{
-  'hasCompletedOnboarding': true
-}
-```
-关闭终端重新打开生效
-。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/wsl-zhong-%EF%BC%8C-an-zhuang-Claude%20Code.html</guid><pubDate>Tue, 21 Apr 2026 02:42:18 +0000</pubDate></item><item><title>wsl中，将自己的用户给root权限</title><link>https://junwindxqw.github.io/post/wsl-zhong-%EF%BC%8C-jiang-zi-ji-de-yong-hu-gei-root-quan-xian.html</link><description>## 加入 sudo 用户组
+    nano ~/.claude/settings.json
+    {
+      'env': {
+        'ANTHROPIC_BASE_URL': 'https://api.minimaxi.com/anthropic',
+    	'ANTHROPIC_AUTH_TOKEN': 'xxxxxxx',
+    	'API_TIMEOUT_MS': '3000000',
+    	'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC': 1,
+    	'ANTHROPIC_MODEL': 'MiniMax-M2.7',
+    	'ANTHROPIC_SMALL_FAST_MODEL': 'MiniMax-M2.7',
+    	'ANTHROPIC_DEFAULT_SONNET_MODEL': 'MiniMax-M2.7',
+    	'ANTHROPIC_DEFAULT_OPUS_MODEL': 'MiniMax-M2.7',
+    	'ANTHROPIC_DEFAULT_HAIKU_MODEL': 'MiniMax-M2.7'
+      }
+    }
+    
+    nano ~/.claude.json
+    {
+      'hasCompletedOnboarding': true
+    }。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/wsl-zhong-%EF%BC%8C-an-zhuang-Claude%20Code.html</guid><pubDate>Tue, 21 Apr 2026 02:42:18 +0000</pubDate></item><item><title>wsl中，将自己的用户给root权限</title><link>https://junwindxqw.github.io/post/wsl-zhong-%EF%BC%8C-jiang-zi-ji-de-yong-hu-gei-root-quan-xian.html</link><description>## 加入 sudo 用户组
 sudo 组的所有成员都拥有完整的管理员权限
 
 ```
