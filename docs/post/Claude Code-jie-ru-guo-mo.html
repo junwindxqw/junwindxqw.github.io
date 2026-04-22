@@ -7,20 +7,10 @@
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <script src='https://junwindxqw.github.io/assets/GmeekVercount.js'></script>
     <link rel="icon" href="https://github.com/junwindxqw.png">
-<meta name="description" content="手动接入：
-
-在配置前，请确保清除以下 Anthropic 相关的环境变量，以免影响 MiniMax API 的正常使用：
-- ANTHROPIC_AUTH_TOKEN
-- ANTHROPIC_BASE_URL
-
-注意：环境变量 `ANTHROPIC_AUTH_TOKEN` 和 `ANTHROPIC_BASE_URL` 优先级高于配置文件
-
-
-MacOS & Linux 为 `~/.claude/settings.json`
-Windows 为`用户目录/.claude/settings.json`
-`MINIMAX_API_KEY` 需替换为您的 MiniMax API Key
+<meta name="description" content="清除 ANTHROPIC_AUTH_TOKEN，ANTHROPIC_BASE_URL 环境变量
 
 ```json
+~/.claude/settings.json
 {
 	'env': {
 		'ANTHROPIC_BASE_URL': 'https://api.minimaxi.com/anthropic',
@@ -34,47 +24,17 @@ Windows 为`用户目录/.claude/settings.json`
 		'ANTHROPIC_DEFAULT_HAIKU_MODEL': 'MiniMax-M2.7'
 	}
 }
-```
 
-编辑或新增 `.claude.json` 文件
-MacOS & Linux 为 `~/.claude.json`
-Windows 为`用户目录/.claude.json`
-
-```json
+~/.claude.json
 {
 	'hasCompletedOnboarding': true
 }
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-。">
+```。">
 <meta property="og:title" content="Claude Code接入国模">
-<meta property="og:description" content="手动接入：
-
-在配置前，请确保清除以下 Anthropic 相关的环境变量，以免影响 MiniMax API 的正常使用：
-- ANTHROPIC_AUTH_TOKEN
-- ANTHROPIC_BASE_URL
-
-注意：环境变量 `ANTHROPIC_AUTH_TOKEN` 和 `ANTHROPIC_BASE_URL` 优先级高于配置文件
-
-
-MacOS & Linux 为 `~/.claude/settings.json`
-Windows 为`用户目录/.claude/settings.json`
-`MINIMAX_API_KEY` 需替换为您的 MiniMax API Key
+<meta property="og:description" content="清除 ANTHROPIC_AUTH_TOKEN，ANTHROPIC_BASE_URL 环境变量
 
 ```json
+~/.claude/settings.json
 {
 	'env': {
 		'ANTHROPIC_BASE_URL': 'https://api.minimaxi.com/anthropic',
@@ -88,32 +48,12 @@ Windows 为`用户目录/.claude/settings.json`
 		'ANTHROPIC_DEFAULT_HAIKU_MODEL': 'MiniMax-M2.7'
 	}
 }
-```
 
-编辑或新增 `.claude.json` 文件
-MacOS & Linux 为 `~/.claude.json`
-Windows 为`用户目录/.claude.json`
-
-```json
+~/.claude.json
 {
 	'hasCompletedOnboarding': true
 }
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-。">
+```。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://junwindxqw.github.io/post/Claude%20Code-jie-ru-guo-mo.html">
 <meta property="og:image" content="https://github.com/junwindxqw.png">
@@ -184,17 +124,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>手动接入：</p>
-<p>在配置前，请确保清除以下 Anthropic 相关的环境变量，以免影响 MiniMax API 的正常使用：</p>
-<ul>
-<li>ANTHROPIC_AUTH_TOKEN</li>
-<li>ANTHROPIC_BASE_URL</li>
-</ul>
-<p>注意：环境变量 <code class="notranslate">ANTHROPIC_AUTH_TOKEN</code> 和 <code class="notranslate">ANTHROPIC_BASE_URL</code> 优先级高于配置文件</p>
-<p>MacOS &amp; Linux 为 <code class="notranslate">~/.claude/settings.json</code><br>
-Windows 为<code class="notranslate">用户目录/.claude/settings.json</code><br>
-<code class="notranslate">MINIMAX_API_KEY</code> 需替换为您的 MiniMax API Key</p>
-<div class="highlight highlight-source-json"><pre class="notranslate">{
+<div class="markdown-body" id="postBody"><p>清除 ANTHROPIC_AUTH_TOKEN，ANTHROPIC_BASE_URL 环境变量</p>
+<div class="highlight highlight-source-json"><pre class="notranslate"><span class="pl-ii">~/.claude/settings.json</span>
+{
 	<span class="pl-ent">"env"</span>: {
 		<span class="pl-ent">"ANTHROPIC_BASE_URL"</span>: <span class="pl-s"><span class="pl-pds">"</span>https://api.minimaxi.com/anthropic<span class="pl-pds">"</span></span>,
 		<span class="pl-ent">"ANTHROPIC_AUTH_TOKEN"</span>: <span class="pl-s"><span class="pl-pds">"</span>MINIMAX_API_KEY<span class="pl-pds">"</span></span>,
@@ -206,11 +138,10 @@ Windows 为<code class="notranslate">用户目录/.claude/settings.json</code><b
 		<span class="pl-ent">"ANTHROPIC_DEFAULT_OPUS_MODEL"</span>: <span class="pl-s"><span class="pl-pds">"</span>MiniMax-M2.7<span class="pl-pds">"</span></span>,
 		<span class="pl-ent">"ANTHROPIC_DEFAULT_HAIKU_MODEL"</span>: <span class="pl-s"><span class="pl-pds">"</span>MiniMax-M2.7<span class="pl-pds">"</span></span>
 	}
-}</pre></div>
-<p>编辑或新增 <code class="notranslate">.claude.json</code> 文件<br>
-MacOS &amp; Linux 为 <code class="notranslate">~/.claude.json</code><br>
-Windows 为<code class="notranslate">用户目录/.claude.json</code></p>
-<div class="highlight highlight-source-json"><pre class="notranslate">{
+}
+
+<span class="pl-ii">~/.claude.json</span>
+{
 	<span class="pl-ent">"hasCompletedOnboarding"</span>: <span class="pl-c1">true</span>
 }</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
