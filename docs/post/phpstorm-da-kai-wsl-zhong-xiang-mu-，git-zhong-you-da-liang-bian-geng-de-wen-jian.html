@@ -15,18 +15,18 @@ File Encodings  → Default line separator  ： LF
 
     # 关闭自动转换行尾
     git config --global core.autocrlf false
+
     # 强制使用 LF
     git config --global core.eol lf
+
     # 忽略文件权限变化（第二个常见原因）
     git config --global core.filemode false
+
     # 强制重置工作区状态
     git checkout .    // git restore . 
 
 ## PhpStorm 用了 Windows 的 Git
-File → Settings → Version Control → Git  ：`\\wsl.localhost\Ubuntu\user\bin\git`
-
-## PhpStorm 缓存或索引异常
-点击 File → Invalidate Caches...，勾选 Clear file system cache and local history，然后重启 PhpStorm。">
+File → Settings → Version Control → Git  ：`\\wsl.localhost\Ubuntu\user\bin\git`。">
 <meta property="og:title" content="phpstorm打开wsl中项目，git中有大量变更的文件">
 <meta property="og:description" content="## CRLF/LF
 File → Settings → Editor → Code Style → Line separator  ：  Unix and macOS (\n) 
@@ -36,18 +36,18 @@ File Encodings  → Default line separator  ： LF
 
     # 关闭自动转换行尾
     git config --global core.autocrlf false
+
     # 强制使用 LF
     git config --global core.eol lf
+
     # 忽略文件权限变化（第二个常见原因）
     git config --global core.filemode false
+
     # 强制重置工作区状态
     git checkout .    // git restore . 
 
 ## PhpStorm 用了 Windows 的 Git
-File → Settings → Version Control → Git  ：`\\wsl.localhost\Ubuntu\user\bin\git`
-
-## PhpStorm 缓存或索引异常
-点击 File → Invalidate Caches...，勾选 Clear file system cache and local history，然后重启 PhpStorm。">
+File → Settings → Version Control → Git  ：`\\wsl.localhost\Ubuntu\user\bin\git`。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://junwindxqw.github.io/post/phpstorm-da-kai-wsl-zhong-xiang-mu-%EF%BC%8Cgit-zhong-you-da-liang-bian-geng-de-wen-jian.html">
 <meta property="og:image" content="https://github.com/junwindxqw.png">
@@ -124,17 +124,18 @@ File Encodings  → Default line separator  ： LF</p>
 <p>配置 Git 忽略行尾转换，在 WSL 终端里执行</p>
 <pre class="notranslate"><code class="notranslate"># 关闭自动转换行尾
 git config --global core.autocrlf false
+
 # 强制使用 LF
 git config --global core.eol lf
+
 # 忽略文件权限变化（第二个常见原因）
 git config --global core.filemode false
+
 # 强制重置工作区状态
 git checkout .    // git restore . 
 </code></pre>
 <h2>PhpStorm 用了 Windows 的 Git</h2>
-<p>File → Settings → Version Control → Git  ：<code class="notranslate">\\wsl.localhost\Ubuntu\user\bin\git</code></p>
-<h2>PhpStorm 缓存或索引异常</h2>
-<p>点击 File → Invalidate Caches...，勾选 Clear file system cache and local history，然后重启 PhpStorm。</p></div>
+<p>File → Settings → Version Control → Git  ：<code class="notranslate">\\wsl.localhost\Ubuntu\user\bin\git</code></p></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
