@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Thu, 23 Apr 2026 03:11:31 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>ubuntu安装claude code</title><link>https://junwindxqw.github.io/post/ubuntu-an-zhuang-claude%20code.html</link><description>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Thu, 23 Apr 2026 03:14:49 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>ubuntu安装claude code</title><link>https://junwindxqw.github.io/post/ubuntu-an-zhuang-claude%20code.html</link><description>
     sudo apt update &amp;&amp; sudo apt upgrade -y
     
     sudo apt install -y curl git build-essential
@@ -82,22 +82,17 @@ sudo systemctl disable nginx
 
 
 
-。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/Ubuntu-zhong-an-zhuang-nginx.html</guid><pubDate>Sun, 19 Apr 2026 08:47:20 +0000</pubDate></item><item><title>WSL 与 Win 文件互访</title><link>https://junwindxqw.github.io/post/WSL%20-yu-%20Win%20-wen-jian-hu-fang.html</link><description>&gt; win 的磁盘挂载在 wsl 的 /mnt 下
-
-## WSL → Windows
-- 访问文件：`/mnt/c/`  ` /mnt/d/`
-- 打开当前目录：`explorer.exe .`
-
-
-## Windows → WSL
-- 访问路径：`\\wsl.localhost`   `\\wsl$`
-
-## wsl 中快捷使用 vscode 打开
-```sh
-code .    # 如果打不开，可以参考下面的phpstorm配置别名
-code docker-compose.yml
+。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/Ubuntu-zhong-an-zhuang-nginx.html</guid><pubDate>Sun, 19 Apr 2026 08:47:20 +0000</pubDate></item><item><title>WSL 与 Win 文件互访</title><link>https://junwindxqw.github.io/post/WSL%20-yu-%20Win%20-wen-jian-hu-fang.html</link><description>win 的磁盘挂载在 wsl 的 /mnt 下
 ```
-或者直接在文件资源管理器中先打开wsl目录，然后右键菜单中选择vscode打开。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/WSL%20-yu-%20Win%20-wen-jian-hu-fang.html</guid><pubDate>Sun, 19 Apr 2026 06:53:35 +0000</pubDate></item><item><title>docker安装memos</title><link>https://junwindxqw.github.io/post/docker-an-zhuang-memos.html</link><description>## 一键搞定版
+/mnt/c/
+/mnt/d/
+```
+wsl 在 win 的访问路径
+```
+\\wsl.localhost
+\\wsl$
+explorer.exe .
+```。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/WSL%20-yu-%20Win%20-wen-jian-hu-fang.html</guid><pubDate>Sun, 19 Apr 2026 06:53:35 +0000</pubDate></item><item><title>docker安装memos</title><link>https://junwindxqw.github.io/post/docker-an-zhuang-memos.html</link><description>## 一键搞定版
 ```sh
  docker run -d \        后台运行 
   --name memos \      容器的名称
