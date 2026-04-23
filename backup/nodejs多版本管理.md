@@ -5,6 +5,8 @@
 ```
 nvm install xx.xx.xx
 
+nvm list
+
 nvm use xx.xx.xx
 
 node -v
