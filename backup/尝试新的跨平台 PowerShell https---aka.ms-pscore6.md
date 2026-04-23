@@ -7,4 +7,7 @@ winget install --id Microsoft.PowerShell --source winget
 
 // 验证安装
 pwsh -v
+
+// 更新
+winget upgrade Microsoft.PowerShell
 ```
