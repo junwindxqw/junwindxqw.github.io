@@ -7,8 +7,7 @@
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <script src='https://junwindxqw.github.io/assets/GmeekVercount.js'></script>
     <link rel="icon" href="https://github.com/junwindxqw.png">
-<meta name="description" content="## 安装
-
+<meta name="description" content="
     sudo apt update && sudo apt upgrade -y
     
     sudo apt install -y curl git build-essential
@@ -17,36 +16,12 @@
     
     claude --version
 
-
-若提示 claude: command not found，执行：
+    若提示 claude: command not found，执行：
 
     echo 'export PATH='$HOME/.local/bin:$PATH'' >> ~/.bashrc
-    source ~/.bashrc
-
-## 接入 minimax
-
-    nano ~/.claude/settings.json
-    {
-      'env': {
-        'ANTHROPIC_BASE_URL': 'https://api.minimaxi.com/anthropic',
-    	'ANTHROPIC_AUTH_TOKEN': 'xxxxxxx',
-    	'API_TIMEOUT_MS': '3000000',
-    	'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC': 1,
-    	'ANTHROPIC_MODEL': 'MiniMax-M2.7',
-    	'ANTHROPIC_SMALL_FAST_MODEL': 'MiniMax-M2.7',
-    	'ANTHROPIC_DEFAULT_SONNET_MODEL': 'MiniMax-M2.7',
-    	'ANTHROPIC_DEFAULT_OPUS_MODEL': 'MiniMax-M2.7',
-    	'ANTHROPIC_DEFAULT_HAIKU_MODEL': 'MiniMax-M2.7'
-      }
-    }
-    
-    nano ~/.claude.json
-    {
-      'hasCompletedOnboarding': true
-    }。">
+    source ~/.bashrc。">
 <meta property="og:title" content="ubuntu安装claude code">
-<meta property="og:description" content="## 安装
-
+<meta property="og:description" content="
     sudo apt update && sudo apt upgrade -y
     
     sudo apt install -y curl git build-essential
@@ -55,33 +30,10 @@
     
     claude --version
 
-
-若提示 claude: command not found，执行：
+    若提示 claude: command not found，执行：
 
     echo 'export PATH='$HOME/.local/bin:$PATH'' >> ~/.bashrc
-    source ~/.bashrc
-
-## 接入 minimax
-
-    nano ~/.claude/settings.json
-    {
-      'env': {
-        'ANTHROPIC_BASE_URL': 'https://api.minimaxi.com/anthropic',
-    	'ANTHROPIC_AUTH_TOKEN': 'xxxxxxx',
-    	'API_TIMEOUT_MS': '3000000',
-    	'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC': 1,
-    	'ANTHROPIC_MODEL': 'MiniMax-M2.7',
-    	'ANTHROPIC_SMALL_FAST_MODEL': 'MiniMax-M2.7',
-    	'ANTHROPIC_DEFAULT_SONNET_MODEL': 'MiniMax-M2.7',
-    	'ANTHROPIC_DEFAULT_OPUS_MODEL': 'MiniMax-M2.7',
-    	'ANTHROPIC_DEFAULT_HAIKU_MODEL': 'MiniMax-M2.7'
-      }
-    }
-    
-    nano ~/.claude.json
-    {
-      'hasCompletedOnboarding': true
-    }。">
+    source ~/.bashrc。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://junwindxqw.github.io/post/ubuntu-an-zhuang-claude%20code.html">
 <meta property="og:image" content="https://github.com/junwindxqw.png">
@@ -152,39 +104,18 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h2>安装</h2>
-<pre class="notranslate"><code class="notranslate">sudo apt update &amp;&amp; sudo apt upgrade -y
+<div class="markdown-body" id="postBody"><pre class="notranslate"><code class="notranslate">sudo apt update &amp;&amp; sudo apt upgrade -y
 
 sudo apt install -y curl git build-essential
 
 curl -fsSL https://claude.ai/install.sh | bash    // 安装位置：~/.local/bin/claude
 
 claude --version
-</code></pre>
-<p>若提示 claude: command not found，执行：</p>
-<pre class="notranslate"><code class="notranslate">echo 'export PATH="$HOME/.local/bin:$PATH"' &gt;&gt; ~/.bashrc
-source ~/.bashrc
-</code></pre>
-<h2>接入 minimax</h2>
-<pre class="notranslate"><code class="notranslate">nano ~/.claude/settings.json
-{
-  "env": {
-    "ANTHROPIC_BASE_URL": "https://api.minimaxi.com/anthropic",
-	"ANTHROPIC_AUTH_TOKEN": "xxxxxxx",
-	"API_TIMEOUT_MS": "3000000",
-	"CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1,
-	"ANTHROPIC_MODEL": "MiniMax-M2.7",
-	"ANTHROPIC_SMALL_FAST_MODEL": "MiniMax-M2.7",
-	"ANTHROPIC_DEFAULT_SONNET_MODEL": "MiniMax-M2.7",
-	"ANTHROPIC_DEFAULT_OPUS_MODEL": "MiniMax-M2.7",
-	"ANTHROPIC_DEFAULT_HAIKU_MODEL": "MiniMax-M2.7"
-  }
-}
 
-nano ~/.claude.json
-{
-  "hasCompletedOnboarding": true
-}
+若提示 claude: command not found，执行：
+
+echo 'export PATH="$HOME/.local/bin:$PATH"' &gt;&gt; ~/.bashrc
+source ~/.bashrc
 </code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
 

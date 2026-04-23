@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Thu, 23 Apr 2026 03:09:10 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>ubuntu安装claude code</title><link>https://junwindxqw.github.io/post/ubuntu-an-zhuang-claude%20code.html</link><description>## 安装
-
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Thu, 23 Apr 2026 03:09:55 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>ubuntu安装claude code</title><link>https://junwindxqw.github.io/post/ubuntu-an-zhuang-claude%20code.html</link><description>
     sudo apt update &amp;&amp; sudo apt upgrade -y
     
     sudo apt install -y curl git build-essential
@@ -9,33 +8,10 @@
     
     claude --version
 
-
-若提示 claude: command not found，执行：
+    若提示 claude: command not found，执行：
 
     echo 'export PATH='$HOME/.local/bin:$PATH'' &gt;&gt; ~/.bashrc
-    source ~/.bashrc
-
-## 接入 minimax
-
-    nano ~/.claude/settings.json
-    {
-      'env': {
-        'ANTHROPIC_BASE_URL': 'https://api.minimaxi.com/anthropic',
-    	'ANTHROPIC_AUTH_TOKEN': 'xxxxxxx',
-    	'API_TIMEOUT_MS': '3000000',
-    	'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC': 1,
-    	'ANTHROPIC_MODEL': 'MiniMax-M2.7',
-    	'ANTHROPIC_SMALL_FAST_MODEL': 'MiniMax-M2.7',
-    	'ANTHROPIC_DEFAULT_SONNET_MODEL': 'MiniMax-M2.7',
-    	'ANTHROPIC_DEFAULT_OPUS_MODEL': 'MiniMax-M2.7',
-    	'ANTHROPIC_DEFAULT_HAIKU_MODEL': 'MiniMax-M2.7'
-      }
-    }
-    
-    nano ~/.claude.json
-    {
-      'hasCompletedOnboarding': true
-    }。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/ubuntu-an-zhuang-claude%20code.html</guid><pubDate>Tue, 21 Apr 2026 02:42:18 +0000</pubDate></item><item><title>Ubuntu给某用户赋予root权限</title><link>https://junwindxqw.github.io/post/Ubuntu-gei-mou-yong-hu-fu-yu-root-quan-xian.html</link><description>    sudo usermod -aG sudo xqw
+    source ~/.bashrc。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/ubuntu-an-zhuang-claude%20code.html</guid><pubDate>Tue, 21 Apr 2026 02:42:18 +0000</pubDate></item><item><title>Ubuntu给某用户赋予root权限</title><link>https://junwindxqw.github.io/post/Ubuntu-gei-mou-yong-hu-fu-yu-root-quan-xian.html</link><description>    sudo usermod -aG sudo xqw
     
     sudo visudo    //  打开 /etc/sudoers 文件
     
