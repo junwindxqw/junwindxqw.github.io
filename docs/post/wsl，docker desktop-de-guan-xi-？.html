@@ -10,26 +10,22 @@
 <meta name="description" content="```
 PS C:\Users\xqw> wsl -l -v
   NAME              STATE           VERSION
-* Ubuntu-24.04      Running         2
-  docker-desktop    Running         2      // 这台就是跑dockerd服务的Linux系统
+* Ubuntu-24.04      Running         2       // docker client
+  docker-desktop    Running         2      // dockerd server
 ```
 
-<img width='944' height='284' alt='Image' src='https://github.com/user-attachments/assets/754fb54b-fa6e-4c95-8cc0-28d510f43676' />
-
-
-Use the WSL 2 based engine ： 让 Docker 运行在 WSL2 的虚拟机里，而不是 Windows 原生虚拟机。">
+Use the WSL 2 based engine 
+- 让 Docker 运行在 WSL2 的虚拟机里，而不是 Windows 原生虚拟机。">
 <meta property="og:title" content="wsl，docker desktop的关系？">
 <meta property="og:description" content="```
 PS C:\Users\xqw> wsl -l -v
   NAME              STATE           VERSION
-* Ubuntu-24.04      Running         2
-  docker-desktop    Running         2      // 这台就是跑dockerd服务的Linux系统
+* Ubuntu-24.04      Running         2       // docker client
+  docker-desktop    Running         2      // dockerd server
 ```
 
-<img width='944' height='284' alt='Image' src='https://github.com/user-attachments/assets/754fb54b-fa6e-4c95-8cc0-28d510f43676' />
-
-
-Use the WSL 2 based engine ： 让 Docker 运行在 WSL2 的虚拟机里，而不是 Windows 原生虚拟机。">
+Use the WSL 2 based engine 
+- 让 Docker 运行在 WSL2 的虚拟机里，而不是 Windows 原生虚拟机。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://junwindxqw.github.io/post/wsl%EF%BC%8Cdocker%20desktop-de-guan-xi-%EF%BC%9F.html">
 <meta property="og:image" content="https://github.com/junwindxqw.png">
@@ -102,40 +98,21 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><pre class="notranslate"><code class="notranslate">PS C:\Users\xqw&gt; wsl -l -v
   NAME              STATE           VERSION
-* Ubuntu-24.04      Running         2
-  docker-desktop    Running         2      // 这台就是跑dockerd服务的Linux系统
+* Ubuntu-24.04      Running         2       // docker client
+  docker-desktop    Running         2      // dockerd server
 </code></pre>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/754fb54b-fa6e-4c95-8cc0-28d510f43676"><img width="944" height="284" alt="Image" src="https://github.com/user-attachments/assets/754fb54b-fa6e-4c95-8cc0-28d510f43676" style="max-width: 100%; height: auto; max-height: 284px;; aspect-ratio: 944 / 284; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a></p>
-<p>Use the WSL 2 based engine ： 让 Docker 运行在 WSL2 的虚拟机里，而不是 Windows 原生虚拟机。</p>
-<p>装的 Docker Desktop 其实是个 “外壳”<br>
-真正跑 Docker 服务（dockerd）、跑容器的环境<br>
-→ 是 WSL2 里的一个小型 Linux（也就是wsl -l -v看到的 docker-desktop， 这个虚拟机中安装了dockerd服务）</p>
-<p>为什么要使用wsl2？</p>
+<p>Use the WSL 2 based engine</p>
 <ul>
-<li>WSL2 比旧版 Hyper-V 环境更快、兼容性更好</li>
-<li>其它的wsl2都可以使用docker客户端服务， 自动请求到 docker-desktop 这台wsl 的 dockerd服务（不过需要开启一个配置，下面讲到）。</li>
+<li>让 Docker 运行在 WSL2 的虚拟机里，而不是 Windows 原生虚拟机。</li>
 </ul>
-<p>*Add the .docker.internal names to the host’s /etc/hosts file  ： 让 Windows 宿主机能用 host.docker.internal 这种域名访问 Docker 环境。</p>
-<p>容器内部本来就能用 host.docker.internal<br>
-但这个配置是为了让 Windows 本身 也能解析这个域名<br>
-Docker 会自动往 Windows 的 hosts 文件写一行：192.168.65.2  host.docker.internal</p>
-<p>为什么要勾？<br>
-你在 Windows 浏览器访问容器服务<br>
-比如：<a href="http://host.docker.internal:8080" rel="nofollow">http://host.docker.internal:8080</a><br>
-你在 WSL2 访问 Windows 本地服务<br>
-否则你必须用 IP 而不能用名字</p>
-<p>两个配置的关系总结<br>
-第一个：决定 Docker 是跑在 WSL2 里（你现在的情况）<br>
-第二个：决定 Windows 能不能用 host.docker.internal 访问 Docker 环境</p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/9e19027f-5fcd-4ef2-bfc4-b45874593958"><img width="888" height="327" alt="Image" src="https://github.com/user-attachments/assets/9e19027f-5fcd-4ef2-bfc4-b45874593958" style="max-width: 100%; height: auto; max-height: 327px;; aspect-ratio: 888 / 327; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a></p>
-<p>Enable integration with my default WSL distro：</p>
+<p>*Add the .docker.internal names to the host’s /etc/hosts file</p>
 <ul>
-<li>它会自动把 Docker 服务（/var/run/docker.sock） 共享给你当前默认的那个 WSL 系统。</li>
-<li>同时也会把 docker 客户端命令 安装到默认的 WSL 系统里。</li>
-<li>也就是启用了这个后，其它的wsl系统中，也可以直接使用docker命令了，不过实际的dockerd服务，还是在wsl的docker-desktop中。<a href="https://www.doubao.com/thread/a7b705fff061e" rel="nofollow">https://www.doubao.com/thread/a7b705fff061e</a></li>
+<li>让 Windows 宿主机能用 host.docker.internal 这种域名访问</li>
 </ul>
-<p>Ubuntu-24.04 (下方的独立开关)<br>
-对 非默认 的 WSL 系统起作用，当你电脑里装了不止一个 WSL 系统（比如 Ubuntu 22.04、Debian、Kali），你可以用这个开关，单独决定 哪个非默认系统 也能连上 Docker。</p></div>
+<p>Enable integration with my default WSL distro</p>
+<ul>
+<li>启用了这个后，其它的wsl系统中，可直接使用docker命令</li>
+</ul></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
