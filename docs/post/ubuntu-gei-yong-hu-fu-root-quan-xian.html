@@ -7,43 +7,27 @@
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <script src='https://junwindxqw.github.io/assets/GmeekVercount.js'></script>
     <link rel="icon" href="https://github.com/junwindxqw.png">
-<meta name="description" content="```
-ossfs ttxres /opt/oss_upload \
-  -o url=oss-cn-guangzhou-internal.aliyuncs.com \
-  -o passwd_file=/etc/passwd-ossfs \
-  -o allow_other \
-  -o mp_umask=022 \
-  -o umask=022
-```
+<meta name="description" content="    sudo usermod -aG sudo xqw
+    
+    sudo visudo    //  打开 /etc/sudoers 文件
+    
+    root    ALL=(ALL:ALL) ALL
+    xqw     ALL=(ALL:ALL) ALL     // xqw     ALL=(ALL:ALL) NOPASSWD: ALL
 
-- ttxres  Bucket桶
--  /opt/oss_upload  本地要挂载的目录
-- oss-cn-guangzhou-internal.aliyuncs.com  OSS 内网访问地址（广州区）
-- -o passwd_file=/etc/passwd-ossfs  从指定文件读取密钥（AccessKey）， 文件格式：BucketName:AccessKeyID:AccessKeySecret  不配则自动查找
-- -o allow_other   允许所有系统用户访问这个挂载目录
--  -o mp_umask=022 挂载后目录 / 文件权限
-- -o umask=022 新创建的文件 / 目录权限。">
-<meta property="og:title" content="阿里云oss挂载到服务器本地目录">
-<meta property="og:description" content="```
-ossfs ttxres /opt/oss_upload \
-  -o url=oss-cn-guangzhou-internal.aliyuncs.com \
-  -o passwd_file=/etc/passwd-ossfs \
-  -o allow_other \
-  -o mp_umask=022 \
-  -o umask=022
-```
+。">
+<meta property="og:title" content="ubuntu给用户赋root权限">
+<meta property="og:description" content="    sudo usermod -aG sudo xqw
+    
+    sudo visudo    //  打开 /etc/sudoers 文件
+    
+    root    ALL=(ALL:ALL) ALL
+    xqw     ALL=(ALL:ALL) ALL     // xqw     ALL=(ALL:ALL) NOPASSWD: ALL
 
-- ttxres  Bucket桶
--  /opt/oss_upload  本地要挂载的目录
-- oss-cn-guangzhou-internal.aliyuncs.com  OSS 内网访问地址（广州区）
-- -o passwd_file=/etc/passwd-ossfs  从指定文件读取密钥（AccessKey）， 文件格式：BucketName:AccessKeyID:AccessKeySecret  不配则自动查找
-- -o allow_other   允许所有系统用户访问这个挂载目录
--  -o mp_umask=022 挂载后目录 / 文件权限
-- -o umask=022 新创建的文件 / 目录权限。">
+。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://junwindxqw.github.io/post/a-li-yun-oss-gua-zai-dao-fu-wu-qi-ben-di-mu-lu.html">
+<meta property="og:url" content="https://junwindxqw.github.io/post/ubuntu-gei-yong-hu-fu-root-quan-xian.html">
 <meta property="og:image" content="https://github.com/junwindxqw.png">
-<title>阿里云oss挂载到服务器本地目录</title>
+<title>ubuntu给用户赋root权限</title>
 
 
 
@@ -86,7 +70,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">阿里云oss挂载到服务器本地目录</h1>
+<h1 class="postTitle">ubuntu给用户赋root权限</h1>
 <div class="title-right">
     <a href="https://junwindxqw.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -94,7 +78,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/junwindxqw/junwindxqw.github.io/issues/32" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/junwindxqw/junwindxqw.github.io/issues/39" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -110,22 +94,13 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><pre class="notranslate"><code class="notranslate">ossfs ttxres /opt/oss_upload \
-  -o url=oss-cn-guangzhou-internal.aliyuncs.com \
-  -o passwd_file=/etc/passwd-ossfs \
-  -o allow_other \
-  -o mp_umask=022 \
-  -o umask=022
-</code></pre>
-<ul>
-<li>ttxres  Bucket桶</li>
-<li>/opt/oss_upload  本地要挂载的目录</li>
-<li>oss-cn-guangzhou-internal.aliyuncs.com  OSS 内网访问地址（广州区）</li>
-<li>-o passwd_file=/etc/passwd-ossfs  从指定文件读取密钥（AccessKey）， 文件格式：BucketName:AccessKeyID:AccessKeySecret  不配则自动查找</li>
-<li>-o allow_other   允许所有系统用户访问这个挂载目录</li>
-<li>-o mp_umask=022 挂载后目录 / 文件权限</li>
-<li>-o umask=022 新创建的文件 / 目录权限</li>
-</ul></div>
+<div class="markdown-body" id="postBody"><pre class="notranslate"><code class="notranslate">sudo usermod -aG sudo xqw
+
+sudo visudo    //  打开 /etc/sudoers 文件
+
+root    ALL=(ALL:ALL) ALL
+xqw     ALL=(ALL:ALL) ALL     // xqw     ALL=(ALL:ALL) NOPASSWD: ALL
+</code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>

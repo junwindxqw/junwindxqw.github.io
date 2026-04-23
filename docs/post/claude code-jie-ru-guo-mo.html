@@ -7,28 +7,58 @@
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <script src='https://junwindxqw.github.io/assets/GmeekVercount.js'></script>
     <link rel="icon" href="https://github.com/junwindxqw.png">
-<meta name="description" content="    sudo usermod -aG sudo xqw
-    
-    sudo visudo    //  打开 /etc/sudoers 文件
-    
-    root    ALL=(ALL:ALL) ALL
-    xqw     ALL=(ALL:ALL) ALL     // xqw     ALL=(ALL:ALL) NOPASSWD: ALL
+<meta name="description" content="清除 ANTHROPIC_AUTH_TOKEN，ANTHROPIC_BASE_URL 环境变量
 
-。">
-<meta property="og:title" content="Ubuntu给某用户赋予root权限">
-<meta property="og:description" content="    sudo usermod -aG sudo xqw
-    
-    sudo visudo    //  打开 /etc/sudoers 文件
-    
-    root    ALL=(ALL:ALL) ALL
-    xqw     ALL=(ALL:ALL) ALL     // xqw     ALL=(ALL:ALL) NOPASSWD: ALL
+```json
+~/.claude/settings.json
+{
+	'env': {
+		'ANTHROPIC_BASE_URL': 'https://api.minimaxi.com/anthropic',
+		'ANTHROPIC_AUTH_TOKEN': 'MINIMAX_API_KEY',
+		'API_TIMEOUT_MS': '3000000',
+		'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC': 1,
+		'ANTHROPIC_MODEL': 'MiniMax-M2.7',
+		'ANTHROPIC_SMALL_FAST_MODEL': 'MiniMax-M2.7',
+		'ANTHROPIC_DEFAULT_SONNET_MODEL': 'MiniMax-M2.7',
+		'ANTHROPIC_DEFAULT_OPUS_MODEL': 'MiniMax-M2.7',
+		'ANTHROPIC_DEFAULT_HAIKU_MODEL': 'MiniMax-M2.7'
+	}
+}
 
-。">
+~/.claude.json
+{
+	'hasCompletedOnboarding': true
+}
+```。">
+<meta property="og:title" content="claude code接入国模">
+<meta property="og:description" content="清除 ANTHROPIC_AUTH_TOKEN，ANTHROPIC_BASE_URL 环境变量
+
+```json
+~/.claude/settings.json
+{
+	'env': {
+		'ANTHROPIC_BASE_URL': 'https://api.minimaxi.com/anthropic',
+		'ANTHROPIC_AUTH_TOKEN': 'MINIMAX_API_KEY',
+		'API_TIMEOUT_MS': '3000000',
+		'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC': 1,
+		'ANTHROPIC_MODEL': 'MiniMax-M2.7',
+		'ANTHROPIC_SMALL_FAST_MODEL': 'MiniMax-M2.7',
+		'ANTHROPIC_DEFAULT_SONNET_MODEL': 'MiniMax-M2.7',
+		'ANTHROPIC_DEFAULT_OPUS_MODEL': 'MiniMax-M2.7',
+		'ANTHROPIC_DEFAULT_HAIKU_MODEL': 'MiniMax-M2.7'
+	}
+}
+
+~/.claude.json
+{
+	'hasCompletedOnboarding': true
+}
+```。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://junwindxqw.github.io/post/Ubuntu-gei-mou-yong-hu-fu-yu-root-quan-xian.html">
+<meta property="og:url" content="https://junwindxqw.github.io/post/claude%20code-jie-ru-guo-mo.html">
 <meta property="og:image" content="https://github.com/junwindxqw.png">
-<title>Ubuntu给某用户赋予root权限</title>
-
+<title>claude code接入国模</title>
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
 
 
 </head>
@@ -70,7 +100,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">Ubuntu给某用户赋予root权限</h1>
+<h1 class="postTitle">claude code接入国模</h1>
 <div class="title-right">
     <a href="https://junwindxqw.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -78,7 +108,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/junwindxqw/junwindxqw.github.io/issues/39" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/junwindxqw/junwindxqw.github.io/issues/25" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -94,13 +124,26 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><pre class="notranslate"><code class="notranslate">sudo usermod -aG sudo xqw
+<div class="markdown-body" id="postBody"><p>清除 ANTHROPIC_AUTH_TOKEN，ANTHROPIC_BASE_URL 环境变量</p>
+<div class="highlight highlight-source-json"><pre class="notranslate"><span class="pl-ii">~/.claude/settings.json</span>
+{
+	<span class="pl-ent">"env"</span>: {
+		<span class="pl-ent">"ANTHROPIC_BASE_URL"</span>: <span class="pl-s"><span class="pl-pds">"</span>https://api.minimaxi.com/anthropic<span class="pl-pds">"</span></span>,
+		<span class="pl-ent">"ANTHROPIC_AUTH_TOKEN"</span>: <span class="pl-s"><span class="pl-pds">"</span>MINIMAX_API_KEY<span class="pl-pds">"</span></span>,
+		<span class="pl-ent">"API_TIMEOUT_MS"</span>: <span class="pl-s"><span class="pl-pds">"</span>3000000<span class="pl-pds">"</span></span>,
+		<span class="pl-ent">"CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC"</span>: <span class="pl-c1">1</span>,
+		<span class="pl-ent">"ANTHROPIC_MODEL"</span>: <span class="pl-s"><span class="pl-pds">"</span>MiniMax-M2.7<span class="pl-pds">"</span></span>,
+		<span class="pl-ent">"ANTHROPIC_SMALL_FAST_MODEL"</span>: <span class="pl-s"><span class="pl-pds">"</span>MiniMax-M2.7<span class="pl-pds">"</span></span>,
+		<span class="pl-ent">"ANTHROPIC_DEFAULT_SONNET_MODEL"</span>: <span class="pl-s"><span class="pl-pds">"</span>MiniMax-M2.7<span class="pl-pds">"</span></span>,
+		<span class="pl-ent">"ANTHROPIC_DEFAULT_OPUS_MODEL"</span>: <span class="pl-s"><span class="pl-pds">"</span>MiniMax-M2.7<span class="pl-pds">"</span></span>,
+		<span class="pl-ent">"ANTHROPIC_DEFAULT_HAIKU_MODEL"</span>: <span class="pl-s"><span class="pl-pds">"</span>MiniMax-M2.7<span class="pl-pds">"</span></span>
+	}
+}
 
-sudo visudo    //  打开 /etc/sudoers 文件
-
-root    ALL=(ALL:ALL) ALL
-xqw     ALL=(ALL:ALL) ALL     // xqw     ALL=(ALL:ALL) NOPASSWD: ALL
-</code></pre></div>
+<span class="pl-ii">~/.claude.json</span>
+{
+	<span class="pl-ent">"hasCompletedOnboarding"</span>: <span class="pl-c1">true</span>
+}</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
