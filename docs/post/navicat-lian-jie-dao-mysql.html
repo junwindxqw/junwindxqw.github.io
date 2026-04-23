@@ -7,9 +7,9 @@
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <script src='https://junwindxqw.github.io/assets/GmeekVercount.js'></script>
     <link rel="icon" href="https://github.com/junwindxqw.png">
-<meta name="description" content="ssh的作用：无密登录服务器。">
+<meta name="description" content=">ssh的作用：无密登录服务器。">
 <meta property="og:title" content="navicat连接到mysql">
-<meta property="og:description" content="ssh的作用：无密登录服务器。">
+<meta property="og:description" content=">ssh的作用：无密登录服务器。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://junwindxqw.github.io/post/navicat-lian-jie-dao-mysql.html">
 <meta property="og:image" content="https://github.com/junwindxqw.png">
@@ -80,27 +80,21 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>ssh的作用：无密登录服务器。<br>
+<div class="markdown-body" id="postBody"><blockquote>
+<p>ssh的作用：无密登录服务器。<br>
 ssh密钥相关文档：<a href="https://help.aliyun.com/zh/yunxiao/user-guide/configure-ssh-key" rel="nofollow">https://help.aliyun.com/zh/yunxiao/user-guide/configure-ssh-key</a></p>
+</blockquote>
 <ol>
 <li>本地生成 ssh 密钥对。</li>
 </ol>
-<pre class="notranslate"><code class="notranslate">ssh-keygen -t ed25519 -C "&lt;注释内容&gt;"    // 一路回车即可，密钥默认生成路径：/home/user/.ssh/id_ed25519，公钥与之对应为：/home/user/.ssh/id_ed25519.pub。
+<pre class="notranslate"><code class="notranslate">ssh-keygen -t ed25519 -C "&lt;注释内容&gt;"
 </code></pre>
 <ol start="2">
-<li>将公钥放入到服务器的这个文件中：~/.ssh/authorized_keys ，一行放一个公钥。</li>
+<li>将公钥放入到服务器的这个文件中：~/.ssh/authorized_keys</li>
 <li>使用私钥登录。</li>
 </ol>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f39fdd17-eeaa-4a6f-bca3-b1b40ee28b8d"><img width="572" height="320" alt="Image" src="https://github.com/user-attachments/assets/f39fdd17-eeaa-4a6f-bca3-b1b40ee28b8d" style="max-width: 100%; height: auto; max-height: 320px;; aspect-ratio: 572 / 320; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a></p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/20b539f0-d50f-4541-901b-cbb407a78ed3"><img width="642" height="380" alt="Image" src="https://github.com/user-attachments/assets/20b539f0-d50f-4541-901b-cbb407a78ed3" style="max-width: 100%; height: auto; max-height: 380px;; aspect-ratio: 642 / 380; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a></p>
-<p>踩坑：<br>
-权限问题：700 .ssh + 600 authorized_keys<br>
-authorized_keys文件不存在，手动创建。</p>
-<pre class="notranslate"><code class="notranslate">mkdir -p ~/.ssh
-vim ~/.ssh/authorized_keys
-
-systemctl restart sshd
-</code></pre></div>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/20b539f0-d50f-4541-901b-cbb407a78ed3"><img width="642" height="380" alt="Image" src="https://github.com/user-attachments/assets/20b539f0-d50f-4541-901b-cbb407a78ed3" style="max-width: 100%; height: auto; max-height: 380px;; aspect-ratio: 642 / 380; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
