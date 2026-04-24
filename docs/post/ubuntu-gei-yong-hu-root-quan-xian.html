@@ -7,23 +7,33 @@
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <script src='https://junwindxqw.github.io/assets/GmeekVercount.js'></script>
     <link rel="icon" href="https://github.com/junwindxqw.png">
-<meta name="description" content="    sudo usermod -aG sudo xqw
-    
-    sudo visudo    //  打开 /etc/sudoers 文件
-    
-    root    ALL=(ALL:ALL) ALL
-    xqw     ALL=(ALL:ALL) ALL     // xqw     ALL=(ALL:ALL) NOPASSWD: ALL
+<meta name="description" content="```
+sudo -i   // 切换到root用户
 
-。">
+visudo -f /etc/sudoers.d/xqw
+    xqw ALL=(ALL) NOPASSWD: ALL    // 填入
+
+nano保存退出 ： ctrl + o  -> 回车 -> ctrl + x
+
+chmod 440 /etc/sudoers.d/xqw
+su - xqw
+sudo whoami 
+sudo apt update
+```。">
 <meta property="og:title" content="ubuntu给用户root权限">
-<meta property="og:description" content="    sudo usermod -aG sudo xqw
-    
-    sudo visudo    //  打开 /etc/sudoers 文件
-    
-    root    ALL=(ALL:ALL) ALL
-    xqw     ALL=(ALL:ALL) ALL     // xqw     ALL=(ALL:ALL) NOPASSWD: ALL
+<meta property="og:description" content="```
+sudo -i   // 切换到root用户
 
-。">
+visudo -f /etc/sudoers.d/xqw
+    xqw ALL=(ALL) NOPASSWD: ALL    // 填入
+
+nano保存退出 ： ctrl + o  -> 回车 -> ctrl + x
+
+chmod 440 /etc/sudoers.d/xqw
+su - xqw
+sudo whoami 
+sudo apt update
+```。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://junwindxqw.github.io/post/ubuntu-gei-yong-hu-root-quan-xian.html">
 <meta property="og:image" content="https://github.com/junwindxqw.png">
@@ -94,12 +104,17 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><pre class="notranslate"><code class="notranslate">sudo usermod -aG sudo xqw
+<div class="markdown-body" id="postBody"><pre class="notranslate"><code class="notranslate">sudo -i   // 切换到root用户
 
-sudo visudo    //  打开 /etc/sudoers 文件
+visudo -f /etc/sudoers.d/xqw
+    xqw ALL=(ALL) NOPASSWD: ALL    // 填入
 
-root    ALL=(ALL:ALL) ALL
-xqw     ALL=(ALL:ALL) ALL     // xqw     ALL=(ALL:ALL) NOPASSWD: ALL
+nano保存退出 ： ctrl + o  -&gt; 回车 -&gt; ctrl + x
+
+chmod 440 /etc/sudoers.d/xqw
+su - xqw
+sudo whoami 
+sudo apt update
 </code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
 
