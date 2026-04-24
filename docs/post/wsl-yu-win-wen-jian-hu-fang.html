@@ -7,37 +7,33 @@
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <script src='https://junwindxqw.github.io/assets/GmeekVercount.js'></script>
     <link rel="icon" href="https://github.com/junwindxqw.png">
-<meta name="description" content="```
-sudo -i   // 切换到root用户
-
-visudo -f /etc/sudoers.d/xqw
-    xqw ALL=(ALL) NOPASSWD: ALL    // 填入
-
-nano保存退出 ： ctrl + o  -> 回车 -> ctrl + x
-
-chmod 440 /etc/sudoers.d/xqw
-su - xqw
-sudo whoami 
-sudo apt update
+<meta name="description" content="win 的磁盘挂载在 wsl 的 /mnt 下
+```
+/mnt/c/
+/mnt/d/
+```
+wsl 在 win 的访问路径
+```
+\\wsl.localhost
+\\wsl$
+explorer.exe .
 ```。">
-<meta property="og:title" content="ubuntu给用户root权限">
-<meta property="og:description" content="```
-sudo -i   // 切换到root用户
-
-visudo -f /etc/sudoers.d/xqw
-    xqw ALL=(ALL) NOPASSWD: ALL    // 填入
-
-nano保存退出 ： ctrl + o  -> 回车 -> ctrl + x
-
-chmod 440 /etc/sudoers.d/xqw
-su - xqw
-sudo whoami 
-sudo apt update
+<meta property="og:title" content="wsl与win文件互访">
+<meta property="og:description" content="win 的磁盘挂载在 wsl 的 /mnt 下
+```
+/mnt/c/
+/mnt/d/
+```
+wsl 在 win 的访问路径
+```
+\\wsl.localhost
+\\wsl$
+explorer.exe .
 ```。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://junwindxqw.github.io/post/ubuntu-gei-yong-hu-root-quan-xian.html">
+<meta property="og:url" content="https://junwindxqw.github.io/post/wsl-yu-win-wen-jian-hu-fang.html">
 <meta property="og:image" content="https://github.com/junwindxqw.png">
-<title>ubuntu给用户root权限</title>
+<title>wsl与win文件互访</title>
 
 
 
@@ -80,7 +76,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">ubuntu给用户root权限</h1>
+<h1 class="postTitle">wsl与win文件互访</h1>
 <div class="title-right">
     <a href="https://junwindxqw.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -88,7 +84,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/junwindxqw/junwindxqw.github.io/issues/39" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/junwindxqw/junwindxqw.github.io/issues/35" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -104,17 +100,14 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><pre class="notranslate"><code class="notranslate">sudo -i   // 切换到root用户
-
-visudo -f /etc/sudoers.d/xqw
-    xqw ALL=(ALL) NOPASSWD: ALL    // 填入
-
-nano保存退出 ： ctrl + o  -&gt; 回车 -&gt; ctrl + x
-
-chmod 440 /etc/sudoers.d/xqw
-su - xqw
-sudo whoami 
-sudo apt update
+<div class="markdown-body" id="postBody"><p>win 的磁盘挂载在 wsl 的 /mnt 下</p>
+<pre class="notranslate"><code class="notranslate">/mnt/c/
+/mnt/d/
+</code></pre>
+<p>wsl 在 win 的访问路径</p>
+<pre class="notranslate"><code class="notranslate">\\wsl.localhost
+\\wsl$
+explorer.exe .
 </code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
 

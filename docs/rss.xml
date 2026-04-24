@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Fri, 24 Apr 2026 10:14:50 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>宝塔安装rabbitmq失败</title><link>https://junwindxqw.github.io/post/bao-ta-an-zhuang-rabbitmq-shi-bai.html</link><description>https://blog.csdn.net/qq_27471405/article/details/141958115
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Fri, 24 Apr 2026 16:54:23 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>宝塔安装rabbitmq失败</title><link>https://junwindxqw.github.io/post/bao-ta-an-zhuang-rabbitmq-shi-bai.html</link><description>https://blog.csdn.net/qq_27471405/article/details/141958115
 
 主要是 erlang 安装失败的问题。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/bao-ta-an-zhuang-rabbitmq-shi-bai.html</guid><pubDate>Thu, 23 Apr 2026 07:35:08 +0000</pubDate></item><item><title>修改phpstorm的默认终端</title><link>https://junwindxqw.github.io/post/xiu-gai-phpstorm-de-mo-ren-zhong-duan.html</link><description>&lt;img width='803' height='344' alt='Image' src='https://github.com/user-attachments/assets/4bcb9fe5-5823-4bd6-aa9b-e5a976fd7b78' /&gt;。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/xiu-gai-phpstorm-de-mo-ren-zhong-duan.html</guid><pubDate>Thu, 23 Apr 2026 03:22:31 +0000</pubDate></item><item><title>ubuntu安装claude code</title><link>https://junwindxqw.github.io/post/ubuntu-an-zhuang-claude%20code.html</link><description>
     sudo apt update &amp;&amp; sudo apt upgrade -y
@@ -89,7 +89,7 @@ sudo systemctl disable nginx
 
 
 
-。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/ubuntu-an-zhuang-nginx.html</guid><pubDate>Sun, 19 Apr 2026 08:47:20 +0000</pubDate></item><item><title>WSL 与 Win 文件互访</title><link>https://junwindxqw.github.io/post/WSL%20-yu-%20Win%20-wen-jian-hu-fang.html</link><description>win 的磁盘挂载在 wsl 的 /mnt 下
+。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/ubuntu-an-zhuang-nginx.html</guid><pubDate>Sun, 19 Apr 2026 08:47:20 +0000</pubDate></item><item><title>wsl与win文件互访</title><link>https://junwindxqw.github.io/post/wsl-yu-win-wen-jian-hu-fang.html</link><description>win 的磁盘挂载在 wsl 的 /mnt 下
 ```
 /mnt/c/
 /mnt/d/
@@ -99,7 +99,7 @@ wsl 在 win 的访问路径
 \\wsl.localhost
 \\wsl$
 explorer.exe .
-```。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/WSL%20-yu-%20Win%20-wen-jian-hu-fang.html</guid><pubDate>Sun, 19 Apr 2026 06:53:35 +0000</pubDate></item><item><title>docker安装memos</title><link>https://junwindxqw.github.io/post/docker-an-zhuang-memos.html</link><description>## 一键搞定版
+```。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/wsl-yu-win-wen-jian-hu-fang.html</guid><pubDate>Sun, 19 Apr 2026 06:53:35 +0000</pubDate></item><item><title>docker安装memos</title><link>https://junwindxqw.github.io/post/docker-an-zhuang-memos.html</link><description>## 一键搞定版
 ```sh
  docker run -d \        后台运行 
   --name memos \      容器的名称
@@ -324,9 +324,9 @@ wsl --import 新名称 安装路径 备份文件.tar  // 示例： wsl --import 
 	'hasCompletedOnboarding': true
 }
 ```。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/claude%20code-jie-ru-guo-mo.html</guid><pubDate>Thu, 09 Apr 2026 08:00:38 +0000</pubDate></item><item><title>php think xxx 报错 not support: redis</title><link>https://junwindxqw.github.io/post/php%20think%20xxx%20-bao-cuo-%20not%20support-%20redis.html</link><description>这里因为这个php cli 版本中没有安装 redis 扩展，安装扩展，或者换其它版本执行
-`/www/server/php/72/bin/php think xxx` 。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/php%20think%20xxx%20-bao-cuo-%20not%20support-%20redis.html</guid><pubDate>Tue, 07 Apr 2026 07:51:25 +0000</pubDate></item><item><title>Nginx缓冲区溢出</title><link>https://junwindxqw.github.io/post/Nginx-huan-chong-qu-yi-chu.html</link><description>&lt;img width='847' height='192' alt='Image' src='https://github.com/user-attachments/assets/b23cd0a1-a6a1-4b74-b8ca-e0584e293592' /&gt;
+`/www/server/php/72/bin/php think xxx` 。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/php%20think%20xxx%20-bao-cuo-%20not%20support-%20redis.html</guid><pubDate>Tue, 07 Apr 2026 07:51:25 +0000</pubDate></item><item><title> nginx缓冲区溢出</title><link>https://junwindxqw.github.io/post/%20nginx-huan-chong-qu-yi-chu.html</link><description>&lt;img width='847' height='192' alt='Image' src='https://github.com/user-attachments/assets/b23cd0a1-a6a1-4b74-b8ca-e0584e293592' /&gt;
 
-&lt;img width='997' height='617' alt='Image' src='https://github.com/user-attachments/assets/c766748a-332f-47d1-b58a-5e6119853fb7' /&gt;。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/Nginx-huan-chong-qu-yi-chu.html</guid><pubDate>Mon, 06 Apr 2026 03:49:10 +0000</pubDate></item><item><title>git创建分支</title><link>https://junwindxqw.github.io/post/git-chuang-jian-fen-zhi.html</link><description>用 a 分支创建分支  b
+&lt;img width='997' height='617' alt='Image' src='https://github.com/user-attachments/assets/c766748a-332f-47d1-b58a-5e6119853fb7' /&gt;。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/%20nginx-huan-chong-qu-yi-chu.html</guid><pubDate>Mon, 06 Apr 2026 03:49:10 +0000</pubDate></item><item><title>git创建分支</title><link>https://junwindxqw.github.io/post/git-chuang-jian-fen-zhi.html</link><description>用 a 分支创建分支  b
 
 ```sh
 # 先看下当前所属分支， 带 * 号的就是 
