@@ -1,3 +1,5 @@
+docker desktop 结合 wsl 的话， 服务进程运行在 docker-desktop 服务器中。 其它Linux使用client连接。
+
 ```
 PS C:\Users\xqw> wsl -l -v
   NAME              STATE           VERSION
