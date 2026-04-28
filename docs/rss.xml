@@ -1,5 +1,42 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Tue, 28 Apr 2026 02:56:38 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>使用 Gateway 远程开发wsl中项目</title><link>https://junwindxqw.github.io/post/shi-yong-%20Gateway%20-yuan-cheng-kai-fa-wsl-zhong-xiang-mu.html</link><description>安装 Toolbox -》 安装 Gateway 
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Tue, 28 Apr 2026 03:39:28 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>GitHub + picList + jsDelivr 免费图床</title><link>https://junwindxqw.github.io/post/GitHub%20%2B%20picList%20%2B%20jsDelivr%20-mian-fei-tu-chuang.html</link><description>&gt; https://linux.do/t/topic/1200827
+&gt; 仓库不要超过1G，可以继续加仓库解决
+
+
+1. 创建一个public仓库
+2. 创建一个token，picList中会用到（用来访问GitHub的）
+
+   setting -&gt; Developer settings 
+
+   ![](http://fastly.jsdelivr.net/gh/junwinds/xqw-img/posts/20260428111631042.png)
+
+​    我将`token`名称设为`PicList`，有效期设置为永久，勾选`Repo`给予该`token`读写仓库权限
+
+​    此`token`仅可在生成式查看一次，请及时保存
+
+3. 安装 piclist   https://github.com/Kuingsmile/PicList/releases
+
+4. 图床配置
+
+   ![image-20260428112504517](http://fastly.jsdelivr.net/gh/junwinds/xqw-img/posts/20260428112504678.png)
+
+![image-20260428112535478](http://fastly.jsdelivr.net/gh/junwinds/xqw-img/posts/20260428112535544.png)
+
+5. jsDelivr 加速 cdn
+
+   第一种是不使用`jsDelivr`加速的，上传下载速度会受网络环境的影响
+
+   ```shell
+   https://raw.githubusercontent.com/B-LIPSTICK/Image-Hosting-Service/main    // 或者不填留空就行
+   ```
+
+   第二种是使用`jsDelivr`全球CDN加速，适合中国大陆用户快速访问
+
+   ```shell
+   https://cdn.jsdelivr.net/gh/B-LIPSTICK/Image-Hosting-Service@main
+   ```
+
+。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/GitHub%20%2B%20picList%20%2B%20jsDelivr%20-mian-fei-tu-chuang.html</guid><pubDate>Tue, 28 Apr 2026 03:34:31 +0000</pubDate></item><item><title>使用 Gateway 远程开发wsl中项目</title><link>https://junwindxqw.github.io/post/shi-yong-%20Gateway%20-yuan-cheng-kai-fa-wsl-zhong-xiang-mu.html</link><description>安装 Toolbox -》 安装 Gateway 
 
 使用wsl，连接到wsl中的项目， 首次会自动在服务器中安装 IDE server
 
