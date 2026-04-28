@@ -1,2 +1,451 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Mon, 27 Apr 2026 17:20:21 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>阿炜的编程日志</title><link>https://junwindxqw.github.io</link><description>学无止境，有容乃大</description><copyright>阿炜的编程日志</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/junwindxqw.png</url><title>avatar</title><link>https://junwindxqw.github.io</link></image><lastBuildDate>Tue, 28 Apr 2026 01:56:31 +0000</lastBuildDate><managingEditor>阿炜的编程日志</managingEditor><ttl>60</ttl><webMaster>阿炜的编程日志</webMaster><item><title>使用 Gateway 远程开发wsl中项目</title><link>https://junwindxqw.github.io/post/shi-yong-%20Gateway%20-yuan-cheng-kai-fa-wsl-zhong-xiang-mu.html</link><description>安装 Toolbox -》 安装 Gateway 
+
+使用wsl，连接到wsl中的项目， 首次会自动在服务器中安装 IDE server
+
+然后在本地中打开一个轻量的 client。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/shi-yong-%20Gateway%20-yuan-cheng-kai-fa-wsl-zhong-xiang-mu.html</guid><pubDate>Sun, 26 Apr 2026 09:57:18 +0000</pubDate></item><item><title>激活 Gateway 轻量 client</title><link>https://junwindxqw.github.io/post/ji-huo-%20Gateway%20-qing-liang-%20client.html</link><description>这种方式是：
+- IDE server 放在服务器中。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/ji-huo-%20Gateway%20-qing-liang-%20client.html</guid><pubDate>Sun, 26 Apr 2026 09:54:57 +0000</pubDate></item><item><title>jb家Gateway 轻量 client 打开 wsl 项目权限不足，无法编辑</title><link>https://junwindxqw.github.io/post/jb-jia-Gateway%20-qing-liang-%20client%20-da-kai-%20wsl%20-xiang-mu-quan-xian-bu-zu-%EF%BC%8C-wu-fa-bian-ji.html</link><description>wsl中安装了宝塔，项目放在宝塔下，用户为www。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/jb-jia-Gateway%20-qing-liang-%20client%20-da-kai-%20wsl%20-xiang-mu-quan-xian-bu-zu-%EF%BC%8C-wu-fa-bian-ji.html</guid><pubDate>Sun, 26 Apr 2026 09:52:35 +0000</pubDate></item><item><title>jb家Gateway 远程开发的 phpstorm 轻量 client 中 ， 用插件打开claude 界面乱了</title><link>https://junwindxqw.github.io/post/jb-jia-Gateway%20-yuan-cheng-kai-fa-de-%20phpstorm%20-qing-liang-%20client%20-zhong-%20%EF%BC%8C%20-yong-cha-jian-da-kai-claude%20-jie-mian-luan-le.html</link><description>卸载重新装1次。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/jb-jia-Gateway%20-yuan-cheng-kai-fa-de-%20phpstorm%20-qing-liang-%20client%20-zhong-%20%EF%BC%8C%20-yong-cha-jian-da-kai-claude%20-jie-mian-luan-le.html</guid><pubDate>Sun, 26 Apr 2026 09:50:38 +0000</pubDate></item><item><title>LoadLibrary failed with error 126: 找不到指定的模块</title><link>https://junwindxqw.github.io/post/LoadLibrary%20failed%20with%20error%20126-%20-zhao-bu-dao-zhi-ding-de-mo-kuai.html</link><description>重新安装显卡驱动
+
+比如我的显卡是：AMD Radeon 760M Graphics
+
+用AMD官网提供的工具，重新安装显卡驱动。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/LoadLibrary%20failed%20with%20error%20126-%20-zhao-bu-dao-zhi-ding-de-mo-kuai.html</guid><pubDate>Sun, 26 Apr 2026 08:39:37 +0000</pubDate></item><item><title>宝塔安装rabbitmq失败</title><link>https://junwindxqw.github.io/post/bao-ta-an-zhuang-rabbitmq-shi-bai.html</link><description>https://blog.csdn.net/qq_27471405/article/details/141958115
+
+主要是 erlang 安装失败的问题。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/bao-ta-an-zhuang-rabbitmq-shi-bai.html</guid><pubDate>Thu, 23 Apr 2026 07:35:08 +0000</pubDate></item><item><title>修改phpstorm的默认终端</title><link>https://junwindxqw.github.io/post/xiu-gai-phpstorm-de-mo-ren-zhong-duan.html</link><description>&lt;img width='803' height='344' alt='Image' src='https://github.com/user-attachments/assets/4bcb9fe5-5823-4bd6-aa9b-e5a976fd7b78' /&gt;。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/xiu-gai-phpstorm-de-mo-ren-zhong-duan.html</guid><pubDate>Thu, 23 Apr 2026 03:22:31 +0000</pubDate></item><item><title>ubuntu安装claude code</title><link>https://junwindxqw.github.io/post/ubuntu-an-zhuang-claude%20code.html</link><description>
+    sudo apt update &amp;&amp; sudo apt upgrade -y
+    
+    sudo apt install -y curl git build-essential
+    
+    curl -fsSL https://claude.ai/install.sh | bash    // 安装位置：~/.local/bin/claude
+    
+    claude --version
+
+    若提示 claude: command not found，执行：
+
+    echo 'export PATH='$HOME/.local/bin:$PATH'' &gt;&gt; ~/.bashrc
+    source ~/.bashrc。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/ubuntu-an-zhuang-claude%20code.html</guid><pubDate>Tue, 21 Apr 2026 02:42:18 +0000</pubDate></item><item><title>ubuntu普通用户免密码</title><link>https://junwindxqw.github.io/post/ubuntu-pu-tong-yong-hu-mian-mi-ma.html</link><description>```
+sudo -i   // 切换到root用户
+
+visudo -f /etc/sudoers.d/xqw
+    xqw ALL=(ALL) NOPASSWD: ALL    // 填入
+
+nano保存退出 ： ctrl + o  -&gt; 回车 -&gt; ctrl + x
+
+chmod 440 /etc/sudoers.d/xqw
+su - xqw
+sudo whoami 
+sudo apt update
+```。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/ubuntu-pu-tong-yong-hu-mian-mi-ma.html</guid><pubDate>Tue, 21 Apr 2026 02:27:12 +0000</pubDate></item><item><title>phpstorm大量变更文件</title><link>https://junwindxqw.github.io/post/phpstorm-da-liang-bian-geng-wen-jian.html</link><description>## CRLF/LF
+File → Settings → Editor → Code Style → Line separator  ：  Unix and macOS (\n) 
+File Encodings  → Default line separator  ： LF
+
+配置 Git 忽略行尾转换，在 WSL 终端里执行
+
+    # 关闭自动转换行尾
+    git config --global core.autocrlf false
+
+    # 强制使用 LF
+    git config --global core.eol lf
+
+    # 忽略文件权限变化（第二个常见原因）
+    git config --global core.filemode false
+
+    # 强制重置工作区状态
+    git checkout .    // git restore . 
+
+## PhpStorm 用了 Windows 的 Git
+File → Settings → Version Control → Git  ：`\\wsl.localhost\Ubuntu\user\bin\git`。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/phpstorm-da-liang-bian-geng-wen-jian.html</guid><pubDate>Tue, 21 Apr 2026 02:01:04 +0000</pubDate></item><item><title>composer dump-autoload</title><link>https://junwindxqw.github.io/post/composer%20dump-autoload.html</link><description>首次部署，执行 composer update 会安装更新依赖，并且生成一个 composer.lock，这个文件是用来锁定依赖版本。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/composer%20dump-autoload.html</guid><pubDate>Mon, 20 Apr 2026 09:49:19 +0000</pubDate></item><item><title>ubuntu安装nginx</title><link>https://junwindxqw.github.io/post/ubuntu-an-zhuang-nginx.html</link><description>## 安装
+```
+sudo apt update
+sudo apt install nginx -y
+nginx -v    # 查看是否已安装
+sudo systemctl status nginx   # 查看是否在运行
+```
+浏览器访问：http://localhost/
+
+## 常用管理命令
+```
+# 启动 Nginx
+sudo systemctl start nginx
+
+# 停止 Nginx
+sudo systemctl stop nginx
+
+# 重启 Nginx（修改配置后必用）
+sudo systemctl restart nginx
+
+# 重新加载配置（不中断服务，推荐）
+sudo systemctl reload nginx
+
+# 设置开机自启
+sudo systemctl enable nginx
+
+# 取消开机自启
+sudo systemctl disable nginx
+```
+
+## Nginx 核心文件路径
+- 主配置文件：/etc/nginx/nginx.conf
+    - 网站配置目录：/etc/nginx/sites-available/
+    - 启用的网站配置：/etc/nginx/sites-enabled/
+    - 默认网页根目录：/var/www/html/
+- 日志目录：
+     - 访问日志：/var/log/nginx/access.log
+    - 错误日志：/var/log/nginx/error.log
+
+
+
+
+
+
+
+。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/ubuntu-an-zhuang-nginx.html</guid><pubDate>Sun, 19 Apr 2026 08:47:20 +0000</pubDate></item><item><title>wsl与win文件互访</title><link>https://junwindxqw.github.io/post/wsl-yu-win-wen-jian-hu-fang.html</link><description>win 的磁盘挂载在 wsl 的 /mnt 下
+```
+/mnt/c/
+/mnt/d/
+```
+wsl 在 win 的访问路径
+```
+\\wsl.localhost
+\\wsl$
+explorer.exe .
+```。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/wsl-yu-win-wen-jian-hu-fang.html</guid><pubDate>Sun, 19 Apr 2026 06:53:35 +0000</pubDate></item><item><title>docker安装memos</title><link>https://junwindxqw.github.io/post/docker-an-zhuang-memos.html</link><description>## 一键搞定版
+```sh
+ docker run -d \        后台运行 
+  --name memos \      容器的名称
+  --restart unless-stopped \      开机 / 崩溃自动重启
+  -p 5230:5230 \       主机5230端口 ：映射到容器中5230端口
+  -v ~/.memos/:/var/opt/memos \         数据持久化 主机~/.memos目录 ： 映射到容器/var/opt/memos
+  neosmemo/memos:stable         镜像名称
+```
+
+## Docker Compose 版
+```sh
+# 创建目录
+mkdir -p ~/docker/memos &amp;&amp; cd ~/docker/memos
+
+# 新建 docker-compose.yml
+vim docker-compose.yml
+```
+
+docker-compose.yml 文件中的内容：
+```yaml 
+version: '3.8'  # 新版本这个字段已废弃，可以不加了
+
+services:
+  memos:    # memos服务
+    image: neosmemo/memos:stable  # 镜像
+    container_name: memos  # 容器名称
+    restart: unless-stopped    # 挂掉了自动重启
+    ports:    # 端口映射
+      - '5230:5230'    # 本机端口：容器端口
+    volumes:   # 数据卷
+      - ./data:/var/opt/memos   # 数据持久化到当前目录 ./data       本机目录：容器目录
+    environment:    # 环境变量
+      - TZ=Asia/Shanghai   # 时区
+```
+
+```
+# 后台启动（首次自动拉镜像）
+docker compose up -d
+
+# 查看运行状态
+docker compose ps
+
+# 查看日志（排错）
+docker compose logs -f
+```
+
+## 访问
+本地：http://localhost:5230
+服务器：http://服务器IP:5230
+
+首次访问会要求创建管理员账号（第一个用户就是管理员）
+
+
+## docker compose 常用管理命令
+```bash
+# 停止
+docker compose stop
+
+# 启动
+docker compose start
+
+# 重启
+docker compose restart
+
+# 停止并删除容器（数据卷 ./data 不会删）
+docker compose down
+
+# 更新镜像（重新拉最新 stable）
+docker compose pull &amp;&amp; docker compose up -d
+```
+
+
+## 数据备份与迁移
+- 数据全部在：./data（或你挂载的本地目录）
+- 备份：直接打包 ./data 文件夹
+- 迁移：把 ./data 复制到新服务器，用同样 docker-compose.yml 启动即可
+
+
+## 常见问题
+- 端口被占用：改端口：-p 5231:5230（宿主机端口改成 5231）
+- 权限报错：给目录权限：chmod -R 755 ./data
+- 国内拉镜像慢：可使用镜像：docker.xuanyuan.run/neosmemo/memos:stable
+
+## 关于restart: unless-stopped配置项
+
+&lt;img width='549' height='459' alt='Image' src='https://github.com/user-attachments/assets/6f5b8944-3a0b-4d2b-b7aa-c79b4ba3ffa5' /&gt;
+
+## docker compose up -d 和 docker compose start 区别？
+
+docker compose start：只启动已存在的容器（不重建、不更新、不读新配置）
+
+docker compose up -d：创建 / 重建 / 更新容器 + 启动（会读最新配置）
+
+&lt;img width='319' height='435' alt='Image' src='https://github.com/user-attachments/assets/a10b3dba-0c19-40fa-abb8-8a0e12dafaa2' /&gt;
+
+&lt;img width='444' height='556' alt='Image' src='https://github.com/user-attachments/assets/ac2bbc5c-430c-41fe-8feb-5a57b3cc03d7' /&gt;
+
+日常重启（不改配置）docker compose restart
+
+改了配置文件（比如端口、目录）docker compose up -d
+
+更新 Memos 最新版    docker compose pull;    docker compose up -d
+
+start = 只启动旧容器
+up -d = 按最新配置重新创建并启动
+
+注意：
+docker compose up -d 不会自动下载新版镜像！
+它只会用【本地已经有的镜像】来启动容器。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/docker-an-zhuang-memos.html</guid><pubDate>Thu, 16 Apr 2026 03:39:18 +0000</pubDate></item><item><title>ubuntu安装docker</title><link>https://junwindxqw.github.io/post/ubuntu-an-zhuang-docker.html</link><description>1. 先检查systemd是否开启，/etc/wsl.conf 中 systemd=true 
+```
+wsl --terminate Ubuntu   终止
+wsl -d Ubuntu   重启
+ps -p 1 -o comm=      # 验证 systemd 是否生效，输出 systemd 即成功
+```
+
+2. 如果已经安装了docker，可以先卸载
+```
+sudo apt-get remove docker docker-engine docker.io containerd runc
+```
+
+3. 更新索引并安装依赖
+```
+sudo apt update &amp;&amp; sudo apt upgrade -y
+sudo apt-get install ca-certificates curl gnupg
+```
+
+4. 添加 Docker 官方 GPG 密钥（使用阿里云镜像）
+```
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+```
+
+5. 添加 Docker 软件源
+```
+echo 'deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors.aliyun.com/docker-ce/linux/ubuntu $(. /etc/os-release &amp;&amp; echo '$VERSION_CODENAME') stable' | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+```
+
+6. 安装 Docker
+```
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+7. 配置 Docker 镜像加速器
+建议配置多个备用地址或使用个人的阿里云加速器。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/ubuntu-an-zhuang-docker.html</guid><pubDate>Wed, 15 Apr 2026 09:50:42 +0000</pubDate></item><item><title>阿里云oss挂载到服务器</title><link>https://junwindxqw.github.io/post/a-li-yun-oss-gua-zai-dao-fu-wu-qi.html</link><description>```
+ossfs ttxres /opt/oss_upload \
+  -o url=oss-cn-guangzhou-internal.aliyuncs.com \
+  -o passwd_file=/etc/passwd-ossfs \
+  -o allow_other \
+  -o mp_umask=022 \
+  -o umask=022
+```
+
+- ttxres  Bucket桶
+-  /opt/oss_upload  本地要挂载的目录
+- oss-cn-guangzhou-internal.aliyuncs.com  OSS 内网访问地址（广州区）
+- -o passwd_file=/etc/passwd-ossfs  从指定文件读取密钥（AccessKey）， 文件格式：BucketName:AccessKeyID:AccessKeySecret  不配则自动查找
+- -o allow_other   允许所有系统用户访问这个挂载目录
+-  -o mp_umask=022 挂载后目录 / 文件权限
+- -o umask=022 新创建的文件 / 目录权限。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/a-li-yun-oss-gua-zai-dao-fu-wu-qi.html</guid><pubDate>Wed, 15 Apr 2026 09:04:40 +0000</pubDate></item><item><title>尚gui谷前端资源</title><link>https://junwindxqw.github.io/post/shang-gui-gu-qian-duan-zi-yuan.html</link><description>尚硅谷前端全套视频教程
+B站直达免费在线看：https://space.bilibili.com/302417610/channel/seriesdetail?sid=457615
+免费视频及资料下载地址：https://pan.baidu.com/s/1EMt3ylnwyOmRyr8ssoPOzQ?pwd=yyds 提取码: yyds
+
+学习路线及下载导航：http://www.atguigu.com/html5_video.shtml#html。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/shang-gui-gu-qian-duan-zi-yuan.html</guid><pubDate>Wed, 15 Apr 2026 03:30:48 +0000</pubDate></item><item><title>激活jb家</title><link>https://junwindxqw.github.io/post/ji-huo-jb-jia.html</link><description>&gt; 声明：仅限测试使用，请支持正版软件。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/ji-huo-jb-jia.html</guid><pubDate>Wed, 15 Apr 2026 03:08:33 +0000</pubDate></item><item><title>wsl基本使用</title><link>https://junwindxqw.github.io/post/wsl-ji-ben-shi-yong.html</link><description>```powershell
+// 安装wsl
+wsl --install  （自动开启功能 + 安装默认 Ubuntu）
+
+// 列出可在线安装的 Linux 发行版
+wsl --list --online    // 简写 wsl -l -o
+
+// 安装某台 Linux（例：Ubuntu-24.04）
+wsl --install -d Ubuntu-24.04
+
+// 列出已安装的
+wsl -l -v
+
+// 启动某台 Linux（进入默认发行版）
+wsl
+// 启动指定 Linux
+wsl -d Ubuntu-24.04
+
+// 停止所有已运行的Linux
+wsl --shutdown
+
+// 停止某台运行的Linux
+wsl --terminate Ubuntu-24.04   // 简写  wsl -t Ubuntu-24.04
+
+// 备份某台 Linux（导出为 .tar 文件）
+wsl --export Ubuntu-24.04 D:\backup\ubuntu2404.tar
+
+// 卸载某台Linux发行版（卸载前先停止运行）
+wsl --unregister Ubuntu-24.04
+
+// 导入备份好的某台 Linux（恢复系统）
+wsl --import 新名称 安装路径 备份文件.tar  // 示例： wsl --import Ubuntu24 D:\WSL\Ubuntu24 D:\backup\ubuntu2404.tar
+```。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/wsl-ji-ben-shi-yong.html</guid><pubDate>Wed, 15 Apr 2026 02:52:56 +0000</pubDate></item><item><title>富文本编辑器引起的页面异常bug</title><link>https://junwindxqw.github.io/post/fu-wen-ben-bian-ji-qi-yin-qi-de-ye-mian-yi-chang-bug.html</link><description>&lt;img width='606' height='237' alt='Image' src='https://github.com/user-attachments/assets/67f67838-9da7-4893-b586-a3bbfe203990' /&gt;
+
+&lt;img width='589' height='213' alt='Image' src='https://github.com/user-attachments/assets/8cada708-d433-4f6f-a782-c3a12855b476' /&gt;
+
+
+因为这个 &gt;  符号的原因，可能会导致html页面元素结构出现问题。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/fu-wen-ben-bian-ji-qi-yin-qi-de-ye-mian-yi-chang-bug.html</guid><pubDate>Tue, 14 Apr 2026 10:01:10 +0000</pubDate></item><item><title>激活win，office</title><link>https://junwindxqw.github.io/post/ji-huo-win%EF%BC%8Coffice.html</link><description>&gt; 声明 : 仅作学习测试用，请支持正版软件。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/ji-huo-win%EF%BC%8Coffice.html</guid><pubDate>Tue, 14 Apr 2026 09:43:51 +0000</pubDate></item><item><title>navicat通过SSH连接mysql</title><link>https://junwindxqw.github.io/post/navicat-tong-guo-SSH-lian-jie-mysql.html</link><description>&gt;ssh的作用：无密登录服务器。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/navicat-tong-guo-SSH-lian-jie-mysql.html</guid><pubDate>Sun, 12 Apr 2026 10:09:06 +0000</pubDate></item><item><title>claude code接入国模</title><link>https://junwindxqw.github.io/post/claude%20code-jie-ru-guo-mo.html</link><description>清除 ANTHROPIC_AUTH_TOKEN，ANTHROPIC_BASE_URL 环境变量
+
+```json
+~/.claude/settings.json
+{
+	'env': {
+		'ANTHROPIC_BASE_URL': 'https://api.minimaxi.com/anthropic',
+		'ANTHROPIC_AUTH_TOKEN': 'MINIMAX_API_KEY',
+		'API_TIMEOUT_MS': '3000000',
+		'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC': 1,
+		'ANTHROPIC_MODEL': 'MiniMax-M2.7',
+		'ANTHROPIC_SMALL_FAST_MODEL': 'MiniMax-M2.7',
+		'ANTHROPIC_DEFAULT_SONNET_MODEL': 'MiniMax-M2.7',
+		'ANTHROPIC_DEFAULT_OPUS_MODEL': 'MiniMax-M2.7',
+		'ANTHROPIC_DEFAULT_HAIKU_MODEL': 'MiniMax-M2.7'
+	}
+}
+
+~/.claude.json
+{
+	'hasCompletedOnboarding': true
+}
+```。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/claude%20code-jie-ru-guo-mo.html</guid><pubDate>Thu, 09 Apr 2026 08:00:38 +0000</pubDate></item><item><title>php think xxx 报错 not support: redis</title><link>https://junwindxqw.github.io/post/php%20think%20xxx%20-bao-cuo-%20not%20support-%20redis.html</link><description>这里因为这个php cli 版本中没有安装 redis 扩展，安装扩展，或者换其它版本执行
+`/www/server/php/72/bin/php think xxx` 。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/php%20think%20xxx%20-bao-cuo-%20not%20support-%20redis.html</guid><pubDate>Tue, 07 Apr 2026 07:51:25 +0000</pubDate></item><item><title> nginx缓冲区溢出</title><link>https://junwindxqw.github.io/post/%20nginx-huan-chong-qu-yi-chu.html</link><description>&lt;img width='847' height='192' alt='Image' src='https://github.com/user-attachments/assets/b23cd0a1-a6a1-4b74-b8ca-e0584e293592' /&gt;
+
+&lt;img width='997' height='617' alt='Image' src='https://github.com/user-attachments/assets/c766748a-332f-47d1-b58a-5e6119853fb7' /&gt;。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/%20nginx-huan-chong-qu-yi-chu.html</guid><pubDate>Mon, 06 Apr 2026 03:49:10 +0000</pubDate></item><item><title>git创建分支</title><link>https://junwindxqw.github.io/post/git-chuang-jian-fen-zhi.html</link><description>用 a 分支创建分支  b
+
+```sh
+# 先看下当前所属分支， 带 * 号的就是 
+git branch 
+
+# 如果不是 a，则切过去
+git checkout a
+
+# 拉取 a 分支最新代码，保证本地为最新
+git pull    // 或 git pull origin a
+
+#  创建 b 分支
+git checkout -b b    // 切到 b 分支，如果 b不存在，则创建
+
+# 推送新分支 b 到远程
+git push -u origin b   // 远程仓库自动生成 b 分支。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/git-chuang-jian-fen-zhi.html</guid><pubDate>Wed, 01 Apr 2026 03:17:58 +0000</pubDate></item><item><title>wsl docker desktop的关系？</title><link>https://junwindxqw.github.io/post/wsl%20docker%20desktop-de-guan-xi-%EF%BC%9F.html</link><description>docker desktop 结合 wsl 的话， 服务进程运行在 docker-desktop 服务器中。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/wsl%20docker%20desktop-de-guan-xi-%EF%BC%9F.html</guid><pubDate>Tue, 31 Mar 2026 10:38:35 +0000</pubDate></item><item><title>阿里云RDS中，有没有一键自动执行OPTIMIZE TABLE xx 的？</title><link>https://junwindxqw.github.io/post/a-li-yun-RDS-zhong-%EF%BC%8C-you-mei-you-yi-jian-zi-dong-zhi-xing-OPTIMIZE%20TABLE%20xx%20-de-%EF%BC%9F.html</link><description>有！阿里云 RDS MySQL 有官方、自动、一键的 OPTIMIZE TABLE 方案：DAS 空间碎片自动回收（完全自动，不用写 SQL）。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/a-li-yun-RDS-zhong-%EF%BC%8C-you-mei-you-yi-jian-zi-dong-zhi-xing-OPTIMIZE%20TABLE%20xx%20-de-%EF%BC%9F.html</guid><pubDate>Mon, 30 Mar 2026 10:09:53 +0000</pubDate></item><item><title>优化MySQL磁盘空间占用</title><link>https://junwindxqw.github.io/post/you-hua-MySQL-ci-pan-kong-jian-zhan-yong.html</link><description>首先说一下，我的MySQL是阿里云RDS，库数据本身占用300G多，然后我在控制台查询到总体占用510G多。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/you-hua-MySQL-ci-pan-kong-jian-zhan-yong.html</guid><pubDate>Mon, 30 Mar 2026 09:53:29 +0000</pubDate></item><item><title>MySQL磁盘空间占用查询</title><link>https://junwindxqw.github.io/post/MySQL-ci-pan-kong-jian-zhan-yong-cha-xun.html</link><description>各个库占用空间：
+```sql
+SELECT 
+  table_schema AS 数据库名,
+  ROUND(SUM(data_length + index_length) / 1024 / 1024 / 1024, 2) AS 占用_G
+FROM information_schema.TABLES
+GROUP BY table_schema
+ORDER BY 占用_G DESC;
+```
+
+某个库下，所有的表，占用空间大小（按大到小排列）：
+```sql
+SELECT
+  table_name AS 表名,
+  ROUND((data_length + index_length) / 1024 / 1024 / 1024, 2) AS 总占用_G,
+  ROUND(data_length / 1024 / 1024 / 1024, 2) AS 数据_G,
+  ROUND(index_length / 1024 / 1024 / 1024, 2) AS 索引_G,
+  table_rows AS 行数
+FROM information_schema.TABLES
+WHERE table_schema = '我的库名称'
+  AND table_type = 'BASE TABLE'
+ORDER BY (data_length + index_length) DESC;
+```
+
+某个库下，所有的表，索引占用空间大小（从大到小排列）：
+```sql
+SELECT
+  table_name AS 表名,
+  ROUND(index_length / 1024 / 1024 / 1024, 2) AS 索引占用_G,
+  ROUND(data_length / 1024 / 1024 / 1024, 2) AS 数据占用_G,
+  ROUND((data_length + index_length) / 1024 / 1024 / 1024, 2) AS 总占用_G
+FROM information_schema.TABLES
+WHERE table_schema = 'xxxxxxxx'  -- 你的库名
+  AND table_type = 'BASE TABLE'
+ORDER BY index_length DESC;  -- 按索引大小排序
+```
+
+某个库下，某张表的所占空间大小：
+```sql
+SELECT
+  table_name AS 表名,
+  ROUND((data_length + index_length) / 1024 / 1024 / 1024, 2) AS 总占用_G,
+  ROUND(data_length / 1024 / 1024 / 1024, 2) AS 数据_G,
+  ROUND(index_length / 1024 / 1024 / 1024, 2) AS 索引_G,
+  table_rows AS 行数
+FROM information_schema.TABLES
+WHERE table_schema = 'xxxx'  -- 你的库名
+  AND table_name = 'xxxxx';  -- 你要查的表
+```
+
+
+
+
+
+
+。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/MySQL-ci-pan-kong-jian-zhan-yong-cha-xun.html</guid><pubDate>Mon, 30 Mar 2026 08:46:10 +0000</pubDate></item><item><title>webstorm打开vue2项目报红</title><link>https://junwindxqw.github.io/post/webstorm-da-kai-vue2-xiang-mu-bao-hong.html</link><description> likeshop项目   vue2 + elementUi
+
+&lt;img width='461' height='229' alt='Image' src='https://github.com/user-attachments/assets/3ee03eef-7d8e-4b0e-9bfd-e12398f85b45' /&gt;
+
+&lt;img width='989' height='728' alt='Image' src='https://github.com/user-attachments/assets/a637ea39-cf56-42c0-83ce-c318020b46ba' /&gt;
+。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/webstorm-da-kai-vue2-xiang-mu-bao-hong.html</guid><pubDate>Sun, 29 Mar 2026 08:07:14 +0000</pubDate></item><item><title>webstorm注释顶行头问题</title><link>https://junwindxqw.github.io/post/webstorm-zhu-shi-ding-xing-tou-wen-ti.html</link><description>注释默认就是从一行的开头。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/webstorm-zhu-shi-ding-xing-tou-wen-ti.html</guid><pubDate>Sun, 29 Mar 2026 08:00:55 +0000</pubDate></item><item><title>nodejs多版本管理</title><link>https://junwindxqw.github.io/post/nodejs-duo-ban-ben-guan-li.html</link><description>使用 nvm 
+
+先卸载干净之前安装的 node，安装 nvm
+
+```
+nvm install xx.xx.xx
+
+nvm list
+
+nvm use xx.xx.xx
+
+node -v
+npm -v
+```
+
+如果无法使用 nvm install 安装某个版本，我们可以手动安装，比如手动安装 14.21.3 
+
+1.  下载 https://nodejs.org/dist/v14.21.3/ ， node-v14.21.3-win-x64.zip
+2.  找到 nvm 的安装目录，nvm root
+3.  在 nvm 目录下新建文件夹 v14.21.3（严格对应版本号）；  
+4. 将下载的压缩包解压到 v14.21.3 文件夹内（确保解压后能直接看到 node.exe（Windows）或 bin 目录（macOS/Linux））。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/nodejs-duo-ban-ben-guan-li.html</guid><pubDate>Sun, 29 Mar 2026 07:49:40 +0000</pubDate></item><item><title>使用ddddocr库识别验证码</title><link>https://junwindxqw.github.io/post/shi-yong-ddddocr-ku-shi-bie-yan-zheng-ma.html</link><description>这是一个python库。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/shi-yong-ddddocr-ku-shi-bie-yan-zheng-ma.html</guid><pubDate>Sun, 29 Mar 2026 07:13:46 +0000</pubDate></item><item><title>干掉多表联查</title><link>https://junwindxqw.github.io/post/gan-diao-duo-biao-lian-cha.html</link><description>&lt;img width='306' height='255' alt='Image' src='https://github.com/user-attachments/assets/6ef44a49-5ddc-4a70-a029-189501f71d1c' /&gt;
+
+解决办法： 
+- 把需要联表查询的条件，提前查出来。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/gan-diao-duo-biao-lian-cha.html</guid><pubDate>Wed, 25 Mar 2026 06:55:39 +0000</pubDate></item><item><title>fastadmin后台分页条数问题？</title><link>https://junwindxqw.github.io/post/fastadmin-hou-tai-fen-ye-tiao-shu-wen-ti-%EF%BC%9F.html</link><description>fastadmin管理后台，我把某一个页面的，每页显示条数调整为500条。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/fastadmin-hou-tai-fen-ye-tiao-shu-wen-ti-%EF%BC%9F.html</guid><pubDate>Wed, 25 Mar 2026 02:44:30 +0000</pubDate></item><item><title>尝试新的跨平台 PowerShell https://aka.ms/pscore6</title><link>https://junwindxqw.github.io/post/chang-shi-xin-de-kua-ping-tai-%20PowerShell%20https---aka.ms-pscore6.html</link><description>```powershell
+// 搜索PowerShell的最新版本
+winget search --id Microsoft.PowerShell
+
+// 安装
+winget install --id Microsoft.PowerShell --source winget
+
+// 验证安装
+pwsh -v
+
+// 更新
+winget upgrade Microsoft.PowerShell
+```。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/chang-shi-xin-de-kua-ping-tai-%20PowerShell%20https---aka.ms-pscore6.html</guid><pubDate>Mon, 26 Jan 2026 02:43:34 +0000</pubDate></item><item><title>phpstorm中，按esc对claude无效？</title><link>https://junwindxqw.github.io/post/phpstorm-zhong-%EF%BC%8C-an-esc-dui-claude-wu-xiao-%EF%BC%9F.html</link><description>提示 esc to exit，但是按esc，没有反应， 其实是phpstorm拦截了
+
+设置 -&gt; 工具 -&gt; 终端 -&gt; 取消勾选 “使用Escape将焦点移至编辑器”。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/phpstorm-zhong-%EF%BC%8C-an-esc-dui-claude-wu-xiao-%EF%BC%9F.html</guid><pubDate>Wed, 21 Jan 2026 07:51:34 +0000</pubDate></item><item><title>不要用宝塔批量处理文件</title><link>https://junwindxqw.github.io/post/bu-yao-yong-bao-ta-pi-liang-chu-li-wen-jian.html</link><description>1. 删除项目runtime下的大量日志文件。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/bu-yao-yong-bao-ta-pi-liang-chu-li-wen-jian.html</guid><pubDate>Wed, 21 Jan 2026 03:52:47 +0000</pubDate></item><item><title>后台首页优化</title><link>https://junwindxqw.github.io/post/hou-tai-shou-ye-you-hua.html</link><description>某些管理后台，喜欢在首页展示各种统计数据。</description><guid isPermaLink="true">https://junwindxqw.github.io/post/hou-tai-shou-ye-you-hua.html</guid><pubDate>Mon, 19 Jan 2026 01:45:32 +0000</pubDate></item></channel></rss>
